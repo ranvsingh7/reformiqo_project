@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/reformiqo_project/static/css/main.c46fa40b.css",
+    "main.js": "/reformiqo_project/static/js/main.ab088520.js",
+    "static/js/498.956541b8.chunk.js": "/reformiqo_project/static/js/498.956541b8.chunk.js",
+    "static/js/703.42629009.chunk.js": "/reformiqo_project/static/js/703.42629009.chunk.js",
+    "static/js/142.e8762929.chunk.js": "/reformiqo_project/static/js/142.e8762929.chunk.js",
+    "index.html": "/reformiqo_project/index.html",
+    "main.c46fa40b.css.map": "/reformiqo_project/static/css/main.c46fa40b.css.map",
+    "main.ab088520.js.map": "/reformiqo_project/static/js/main.ab088520.js.map",
+    "498.956541b8.chunk.js.map": "/reformiqo_project/static/js/498.956541b8.chunk.js.map",
+    "703.42629009.chunk.js.map": "/reformiqo_project/static/js/703.42629009.chunk.js.map",
+    "142.e8762929.chunk.js.map": "/reformiqo_project/static/js/142.e8762929.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c46fa40b.css",
+    "static/js/main.ab088520.js"
+  ]
+}
