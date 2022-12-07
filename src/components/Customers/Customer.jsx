@@ -5,7 +5,6 @@ import { Table } from "antd";
 import { CSVLink } from "react-csv";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
