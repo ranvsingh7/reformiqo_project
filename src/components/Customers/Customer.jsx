@@ -1,18 +1,21 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Customers.scss";
 import { Table } from "antd";
 import { CSVLink } from "react-csv";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
+import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
-import { useEffect } from "react";
 
 const Customer = () => {
   const [exportOpen, setExportOpen] = useState(false);
+  const [settingOpen, setSettingOpen] = useState(false);
+
+  // const menuRef = useRef()
 
   const dataSource = [
     {
@@ -25,7 +28,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "2",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -34,7 +37,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "3",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -43,7 +46,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "4",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -52,7 +55,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "5",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -61,7 +64,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "6",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -70,7 +73,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "7",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -79,7 +82,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "8",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -88,7 +91,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "9",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -97,7 +100,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "10",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -106,7 +109,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "11",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -115,7 +118,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "12",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -124,7 +127,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "13",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -133,7 +136,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "14",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -142,7 +145,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "15",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -151,7 +154,7 @@ const Customer = () => {
       email: "parth@gmail.com",
     },
     {
-      key: "1",
+      key: "16",
       business_name: "Reformiqo Business Service Pvt. Ltd",
       type: "Customer",
       account: "Account Receivable",
@@ -162,8 +165,7 @@ const Customer = () => {
 
     // ...
   ];
-
-  const columns = [
+  const columnsData = [
     {
       title: "Business Name",
       label: "Business Name",
@@ -201,6 +203,8 @@ const Customer = () => {
       key: "email",
     },
   ];
+  const [columns,setColumns] = useState(columnsData)
+  
 
   const csvLink = {
     filename: "customer_data.csv",
@@ -221,15 +225,28 @@ const Customer = () => {
   const openExport = () => {
     setExportOpen(!exportOpen);
   };
+  const openSetting = () => {
+    setSettingOpen(!settingOpen);
+  };
 
   useEffect(() => {
     let handler = (e) => {
       if (e.target) {
         setExportOpen(false);
+        
       }
+      // setSettingOpen(false);
     };
     document.addEventListener("mousedown", handler);
   });
+
+  const handleDragEnd = (e)=>{
+    if (!e.destination) return;
+    let tempData = Array.from(columns);
+    let [source_data] = tempData.splice(e.source.index, 1);
+    tempData.splice(e.destination.index, 0, source_data);
+    setColumns(tempData)
+  }
 
   return (
     <div className="customers">
@@ -295,12 +312,49 @@ const Customer = () => {
             <div className="addNew_btn_icon ">+</div>
             New
           </div>
-          <div className="settings">
-            <img src="./images/icons/setting.svg" alt="" />
-            <div className="table_setting_dropdown">
+          <div className="settings" >
+            <img src="./images/icons/setting.svg" alt="icon" onClick={openSetting} />
+            <DragDropContext onDragEnd={handleDragEnd}>
+              <div
+                className={`table_setting_dropdown ${
+                  settingOpen ? "active" : "inactive"
+                }`}
+              >
+                <h5>Manage Columns</h5>
+
+                <Droppable droppableId="draggable_item">
+                  {(provider) => (
+                    <div ref={provider.innerRef} {...provider.droppableProps}>
+                      {columns.map((item,index) => (
+                        <Draggable draggableId={item.key} index={index} key={item.key}>
+                          {(provider) => (
+                            <div
+                              className="columns_fields"
+                              ref={provider.innerRef}
+                              {...provider.draggableProps}
+                              {...provider.dragHandleProps}
+                            >
+                              <div className="chekbox_title">
+                                <input type="checkbox" />
+                                <span>{item.title}</span>
+                              </div>
+                              <div>
+                                <img
+                                  src="./images/icons/bx-dialpad-alt.svg"
+                                  alt="icon"
+                                />
+                              </div>
+                            </div>
+                          )}
+                        </Draggable>
+                      ))}
+                      {provider.placeholder}
+                    </div>
+                  )}
+                </Droppable>
+              </div>
+            </DragDropContext>
           </div>
-          </div>
-          
         </div>
       </div>
 
