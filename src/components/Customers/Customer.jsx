@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import "./Customers.scss";
-import { Table } from "antd";
+import { Table, Checkbox, Affix } from "antd";
+import { Resizable } from 'react-resizable';
 import { CSVLink } from "react-csv";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
@@ -15,7 +16,7 @@ const Customer = () => {
   const [exportOpen, setExportOpen] = useState(false);
   const [settingOpen, setSettingOpen] = useState(false);
 
-  // const menuRef = useRef()
+  const menuRef = useRef(null)
 
   const dataSource = [
     {
@@ -26,6 +27,9 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd.",
+      
     },
     {
       key: "2",
@@ -35,6 +39,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "3",
@@ -44,6 +50,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "4",
@@ -53,6 +61,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "5",
@@ -62,6 +72,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "6",
@@ -71,6 +83,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "7",
@@ -80,6 +94,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "8",
@@ -89,6 +105,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "9",
@@ -98,6 +116,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "10",
@@ -107,6 +127,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "11",
@@ -116,6 +138,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "12",
@@ -125,6 +149,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "13",
@@ -134,6 +160,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "14",
@@ -143,6 +171,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "15",
@@ -152,6 +182,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
     {
       key: "16",
@@ -161,6 +193,8 @@ const Customer = () => {
       unadjusted_account: "Unadjested Receipts",
       type_category: "Wholeseler",
       email: "parth@gmail.com",
+      phone: 9988998899,
+      address: "Reformiqo Business Service Pvt. Ltd."
     },
 
     // ...
@@ -171,40 +205,65 @@ const Customer = () => {
       label: "Business Name",
       dataIndex: "business_name",
       key: "business_name",
+      resizable: true,
+      fixed:'left',
+      align:'left',
+      width:270
     },
     {
       title: "Type",
       label: "Type",
       dataIndex: "type",
       key: "type",
+      resizable: true,
     },
     {
       title: "Account",
       label: "Account",
       dataIndex: "account",
       key: "account",
+      resizable: true,
     },
     {
       title: "Unadjusted Account",
       label: "Unadjusted Account",
       dataIndex: "unadjusted_account",
       key: "unadjusted_account",
+      resizable: true,
     },
     {
       title: "Type Category",
       label: "Type Category",
       dataIndex: "type_category",
       key: "type_category",
+      resizable: true,
     },
     {
       title: "Email",
       label: "Email",
       dataIndex: "email",
       key: "email",
+      resizable: true,
     },
+    {
+      title: "Phone",
+      label: "Phone",
+      dataIndex: "phone",
+      key: "phone",
+      resizable: true,
+    },
+    {
+      title: "Address",
+      label: "Address",
+      dataIndex: "address",
+      key: "address",
+      resizable: true,
+    },
+    
   ];
-  const [columns,setColumns] = useState(columnsData)
-  
+  const [columns, setColumns] = useState(columnsData);
+  const [selectedRowKeys, setSelectedRowKeys] = useState([]);
+  const [selectedRows, setSelectedRows] = useState([]);
 
   const csvLink = {
     filename: "customer_data.csv",
@@ -229,24 +288,43 @@ const Customer = () => {
     setSettingOpen(!settingOpen);
   };
 
+
+  // useEffect(() => {
+  //   let handler = (e) => {
+  //     if (e.target) {
+  //       setExportOpen(false);
+  //     }
+  //     // setSettingOpen(false);
+  //   };
+  //   document.addEventListener("mousedown", handler);
+  // });
   useEffect(() => {
-    let handler = (e) => {
-      if (e.target) {
-        setExportOpen(false);
-        
+
+    let handleClickOutside = (event)=> {
+      console.log(event.target)
+      if (!menuRef.current.contains(event.target)) {
+        // Close the dropdown list
+        setSettingOpen(false);
       }
-      // setSettingOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    // return () => {
+    //   document.removeEventListener('mousedown', handleClickOutside);
+    // };
   });
 
-  const handleDragEnd = (e)=>{
-    if (!e.destination) return;
-    let tempData = Array.from(columns);
+  const handleDragEnd = (e) => {
+    if ( e.destination.index===0) {
+      return
+    }
+    else{
+      let tempData = Array.from(columns);
     let [source_data] = tempData.splice(e.source.index, 1);
     tempData.splice(e.destination.index, 0, source_data);
-    setColumns(tempData)
-  }
+    setColumns(tempData);
+    }
+    console.log(e.destination.index)
+  };
 
   return (
     <div className="customers">
@@ -312,8 +390,13 @@ const Customer = () => {
             <div className="addNew_btn_icon ">+</div>
             New
           </div>
-          <div className="settings" >
-            <img src="./images/icons/setting.svg" alt="icon" onClick={openSetting} />
+          <div className="settings" ref={menuRef}>
+            <img
+              src="./images/icons/setting.svg"
+              alt="icon"
+              onClick={openSetting}
+              
+            />
             <DragDropContext onDragEnd={handleDragEnd}>
               <div
                 className={`table_setting_dropdown ${
@@ -321,12 +404,16 @@ const Customer = () => {
                 }`}
               >
                 <h5>Manage Columns</h5>
-
                 <Droppable droppableId="draggable_item">
                   {(provider) => (
                     <div ref={provider.innerRef} {...provider.droppableProps}>
-                      {columns.map((item,index) => (
-                        <Draggable draggableId={item.key} index={index} key={item.key}>
+                      {columns.map((item, index) => (
+                        <Draggable
+                        draggableId={item.key}
+                        index={index}
+                        key={item.key}
+                        isDragDisabled={item.title==="Business Name" ? true:false}
+                        >
                           {(provider) => (
                             <div
                               className="columns_fields"
@@ -359,7 +446,23 @@ const Customer = () => {
       </div>
 
       <div className="tableData">
-        <Table dataSource={dataSource} columns={columns} />
+        {/* <Resizable> */}
+          <Table
+            rowSelection={{
+              type: "checkbox",
+              columnTitle: "",
+              selectedRowKeys,
+              onChange: (selectedRowKeys, selectedRows) => {
+                setSelectedRowKeys(selectedRowKeys);
+                setSelectedRows(selectedRows);
+              },
+            }}
+            dataSource={dataSource}
+            columns={columns}
+            scroll={{y:400, x:true}}
+            style={{maxWidth:1120}}
+          />
+        {/* </Resizable> */}
       </div>
     </div>
   );
