@@ -216,6 +216,8 @@ const Customer = () => {
       dataIndex: "type",
       key: "type",
       resizable: true,
+      width:100,
+      align:'left'
     },
     {
       title: "Account",
@@ -223,6 +225,8 @@ const Customer = () => {
       dataIndex: "account",
       key: "account",
       resizable: true,
+      width:170,
+      align:'left'
     },
     {
       title: "Unadjusted Account",
@@ -230,6 +234,8 @@ const Customer = () => {
       dataIndex: "unadjusted_account",
       key: "unadjusted_account",
       resizable: true,
+      width:180,
+      align:'left'
     },
     {
       title: "Type Category",
@@ -237,6 +243,8 @@ const Customer = () => {
       dataIndex: "type_category",
       key: "type_category",
       resizable: true,
+      width:150,
+      align:'left'
     },
     {
       title: "Email",
@@ -244,20 +252,8 @@ const Customer = () => {
       dataIndex: "email",
       key: "email",
       resizable: true,
-    },
-    {
-      title: "Phone",
-      label: "Phone",
-      dataIndex: "phone",
-      key: "phone",
-      resizable: true,
-    },
-    {
-      title: "Address",
-      label: "Address",
-      dataIndex: "address",
-      key: "address",
-      resizable: true,
+      width:150,
+      align:'left'
     },
     
   ];
@@ -301,16 +297,16 @@ const Customer = () => {
   useEffect(() => {
 
     let handleClickOutside = (event)=> {
-      console.log(event.target)
       if (!menuRef.current.contains(event.target)) {
         // Close the dropdown list
         setSettingOpen(false);
+        setExportOpen(false);
       }
     }
     document.addEventListener('mousedown', handleClickOutside);
-    // return () => {
-    //   document.removeEventListener('mousedown', handleClickOutside);
-    // };
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   });
 
   const handleDragEnd = (e) => {
@@ -336,8 +332,8 @@ const Customer = () => {
           <input type="text" placeholder="Search Customer" />
         </div>
 
-        <div className="tableBtn_container">
-          <div className="tableBtn export" onClick={openExport}>
+        <div className="tableBtn_container"ref={menuRef} >
+          <div className="tableBtn export"  onClick={openExport}>
             <div className="btn_icon">
               <BiExport size={15} />
             </div>
@@ -456,10 +452,11 @@ const Customer = () => {
                 setSelectedRowKeys(selectedRowKeys);
                 setSelectedRows(selectedRows);
               },
+
             }}
             dataSource={dataSource}
             columns={columns}
-            scroll={{y:400, x:true}}
+            scroll={{y:400, x:1120}}
             style={{maxWidth:1120}}
           />
         {/* </Resizable> */}

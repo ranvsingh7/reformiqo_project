@@ -122,33 +122,33 @@ a{
 .active{
     .btn{
         .plain{
-            background-color: rgba(105, 108, 255 ,.1599);
-            color: #696CFF;
+            background-color: rgba(25, 168, 115, .25);
+            color: #19a873;
             .btn_icon{
-                filter: invert(39%) sepia(31%) saturate(2286%) hue-rotate(213deg) brightness(90%) contrast(102%);
+                filter: invert(45%) sepia(94%) saturate(372%) hue-rotate(106deg) brightness(98%) contrast(91%);
                 
             }
         }
         .right_border{
-            background-color: #696CFF;
+            background-color: #19a873;
         }
     }
 }
 
 .dropdownActive{
     .btn_container{
-        background-color: rgba(105, 108, 255 ,.1599);
-            color: #696CFF;
+        background-color: rgba(25, 168, 115, .25);
+            color: #19a873;
             .btn_icon{
-                filter: invert(39%) sepia(31%) saturate(2286%) hue-rotate(213deg) brightness(90%) contrast(102%);
+                filter: invert(45%) sepia(94%) saturate(372%) hue-rotate(106deg) brightness(98%) contrast(91%);
                 
             }
             .dropdown_arrow{
-                filter: invert(39%) sepia(31%) saturate(2286%) hue-rotate(213deg) brightness(90%) contrast(102%);
+                filter: invert(45%) sepia(94%) saturate(372%) hue-rotate(106deg) brightness(98%) contrast(91%);
             }
     }
     .right_border{
-        background-color: #696CFF;
+        background-color: #19a873;
     }
 }
 
@@ -164,11 +164,11 @@ a{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: rgba(105, 108, 255, .15);
+            background-color: rgba(25, 168, 115, .20);
             width: 12px;
             height: 12px;
             .bullet{
-                background-color: #696cff;
+                background-color: #19a873;
             }
                 }
         }
@@ -208,11 +208,11 @@ a{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: rgba(105, 108, 255, .15);
+            background-color: rgba(25, 168, 115, .20);
             width: 12px;
             height: 12px;
             .bullet{
-                background-color: #a0a1f8;
+                background-color: rgba(8, 161, 105, .5);
             }
                 }
         }
