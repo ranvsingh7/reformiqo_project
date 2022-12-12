@@ -46,7 +46,7 @@ const Sidebar = () => {
               alt="sidebar_logo"
             />
             <div className="collapse_btn" onClick={handleClick}>
-              <img src="./images/sidebar_icons/icon.png" alt="arrow" />
+              <img src="./images/sidebar_icons/icon.svg" alt="arrow" />
             </div>
           </div>
 

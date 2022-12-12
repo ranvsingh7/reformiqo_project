@@ -81,7 +81,7 @@ const Sidebar_btn = ({ item, active, setActive }) => {
   else if (item.type == "btn") {
     return (
       <NavLink to={item.path}>
-        <div className="btn" onClick={changeActive}>
+        <div className="btn normal" onClick={changeActive}>
           <div className="btn_container plain" id={item.id}  >
             <div className="btn_icon">
               <img src={item.icon} alt="icon" />
@@ -117,7 +117,6 @@ const Sidebar_btn = ({ item, active, setActive }) => {
           <div className="right_border"></div>
         </div>
         <div className={`dropdown_item_container ${open && "open_dropdown"}`}>
-        
           {item.childrens.map((btn) => {
             return (
               <NavLink to={btn.path}>

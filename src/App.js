@@ -6,6 +6,8 @@ import SearchBar from './components/SearchBar/SearchBar';
 import Sidebar from './components/Sidebar/Sidebar';
 import Customers from "./components/Customers/Customer"
 import {Routes ,Route } from 'react-router-dom'
+import Page_heading from './components/Page_Heading/Page_heading';
+import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
           <Sidebar/>
           <div className='rightScreen'>
           <SearchBar />
+          
 
           <Routes>
             <Route path='customers' element={<Customers/>} />
+            <Route path='/' element={<Dashboard/>} />
           </Routes>
           <Footer />
           </div>

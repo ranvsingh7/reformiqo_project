@@ -4,11 +4,12 @@
     width: 95%;
     height: 580px;
     margin-top: 30px;
-    // overflow: scroll;
+    overflow: scroll;
 
     .tableData{
         height: 495px;
         // overflow: scroll;
+
     }
 
 }
@@ -18,6 +19,7 @@
     height: 38px;
     align-items: center;
     margin-bottom: 30px;
+    max-width: 1320px;
     
 
     justify-content: space-between;
@@ -191,4 +193,66 @@
         transform: translateY(-20px);
         transition: .5s ease;
     }
+}
+.ant-table-thead .ant-table-cell {
+    background-color: rgba(25, 168, 115, .2) !important;
+    font-size: 15px;
+    font-weight: 500 !important;
+    color: #252525;
+}
+
+.ant-table-row-selected {
+    .ant-table-cell{
+    background-color: rgba(25, 168, 115, .2) !important;
+    border-radius: 0 !important;
+    }
+}
+// .ant-table-selection-column .ant-checkbox-wrapper{
+//     color: red !important;
+// }
+
+.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: rgba(25, 168, 115, 1) !important;
+    border-color: rgba(25, 168, 115, 1) !important;
+   
+}
+// .ant-checkbox-input{
+//     color: red !important;
+// }
+
+.ant-checkbox-inner{
+    border-color: #19A873 !important;
+}
+
+
+
+.ant-checkbox-indeterminate{
+    .ant-checkbox-inner::after{
+        height: 3px !important;
+        background-color: #19A873;
+    }
+}
+th{.ant-checkbox-checked{
+    .ant-checkbox-inner::after{
+        top: 50% !important;
+    inset-inline-start: 50% !important;
+    width: 8px !important;
+    height: 2.5px !important;
+    background-color: #ffff !important;
+    border: 0 !important;
+    transform: translate(-50%, -50%) scale(1) !important;
+    opacity: 1 !important;
+    content: "" !important;
+    }
+}}
+
+.highlight_row{
+    td{
+        // background-color: rgba(194, 202, 210, .2) !important;
+        background-color: rgb(243, 245, 246) !important;
+        overflow: hidden !important;
+    }
+}
+.highlight-row{
+    border-radius: 0% !important;
 }

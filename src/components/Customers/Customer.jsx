@@ -1,4 +1,7 @@
 import React from "react";
+
+
+import Page_heading from "../Page_Heading/Page_heading"
 import { useState, useEffect, useRef } from "react";
 import "./Customers.scss";
 import { Table, Checkbox, Affix } from "antd";
@@ -11,6 +14,8 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
+import { render } from "@testing-library/react";
+import ReactToPrint from "react-to-print";
 
 const Customer = () => {
   const [exportOpen, setExportOpen] = useState(false);
@@ -208,7 +213,7 @@ const Customer = () => {
       resizable: true,
       fixed:'left',
       align:'left',
-      width:270
+      width:270,
     },
     {
       title: "Type",
@@ -322,8 +327,12 @@ const Customer = () => {
     console.log(e.destination.index)
   };
 
+  const componentRef=useRef()
+
+
   return (
     <div className="customers">
+      <Page_heading parent={"Business Account"} child={window.location.pathname.slice(1)}/>
       <div className="table_nav">
         <div className="search_customer">
           <div className="search_icon">
@@ -348,7 +357,11 @@ const Customer = () => {
                 <div className="export_icon">
                   <img src="./images/icons/print_icon.svg" alt="print_icon" />
                 </div>
-                <span>Print</span>
+                {/* <span>Print</span> */}
+                <ReactToPrint 
+                  trigger={()=> <span>Print</span>}
+                  content={()=> componentRef.current}
+                />
               </div>
               <CSVLink {...csvLink} className="csvLink">
                 <div className="export_dropdown_btn">
@@ -441,9 +454,10 @@ const Customer = () => {
         </div>
       </div>
 
-      <div className="tableData">
+      <div className="tableData" >
         {/* <Resizable> */}
           <Table
+          ref={componentRef}
             rowSelection={{
               type: "checkbox",
               columnTitle: "",
@@ -452,12 +466,14 @@ const Customer = () => {
                 setSelectedRowKeys(selectedRowKeys);
                 setSelectedRows(selectedRows);
               },
+              checkboxStyle:{color:'red'}
 
             }}
             dataSource={dataSource}
             columns={columns}
             scroll={{y:400, x:1120}}
             style={{maxWidth:1120}}
+            rowClassName={(record)=> record.key%2 === 0 ? 'highlight_row':''}
           />
         {/* </Resizable> */}
       </div>

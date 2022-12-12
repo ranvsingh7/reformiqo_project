@@ -9,20 +9,19 @@ body{
 
 
 .sidebar{
-    width: 260px;
-    min-width: 260px;
+    width: 240px;
+    min-width: 250px;
     transition: all .5s ease-in-out;
     overflow: hidden;
     height: 100vh;
     // border: 1px solid;
 
     .sidebar_container{
+        // border: 1px solid red;
         max-width: 260px;
-        width: 98%;
+        width: 92%;
         height: 100%;
         background-color: #ffff;
-        // border: 1px solid;
-        margin-left: -10px;
     }
     .sidebar_logo{
         padding: 17px 87px 17px 33px;
@@ -46,7 +45,7 @@ body{
         transition: all .5s;
 
         top: 25%;
-        right: -2%;
+        right: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,7 +58,7 @@ body{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: #696cff;
+            background-color: #19a873;
             color: #ffff;
         }
     }
@@ -95,9 +94,9 @@ body{
 // sidebar mini 
 
     .sidebar_mini{
-    width: 80px;
+    width: 85px;
     margin-right: 115px;
-    min-width: 80px;
+    min-width: 93.5px;
     
 
     .sidebar_logo{
@@ -115,10 +114,8 @@ body{
 
 
     .group{
-        // border: 1px solid;
         svg{
-            // margin: auto;
-            margin-left: 42%;
+            margin: auto;
         }
     
             p{
@@ -129,11 +126,9 @@ body{
 
 
     .btn{
-        margin-left: 10px;
         .btn_container{
-            width: 35px;
+            width: 33px;
             transition: all .5s;
-            margin: auto;
             >p{
                 display: none;
             }
