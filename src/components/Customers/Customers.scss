@@ -6,12 +6,21 @@
     margin-top: 30px;
     overflow: scroll;
 
+    ::-webkit-scrollbar{
+        width: 0;
+    }
     .tableData{
         height: 495px;
+        max-width: 1320px;
+        // min-width: 100%;
+        // border: 1px solid;
         // overflow: scroll;
 
     }
 
+}
+.customers::-webkit-scrollbar{
+    width: 0;
 }
 
 .table_nav{
@@ -195,7 +204,8 @@
     }
 }
 .ant-table-thead .ant-table-cell {
-    background-color: rgba(25, 168, 115, .2) !important;
+    // background-color: rgba(25, 168, 115, .2) !important;
+    background-color: rgba(220, 237, 228, 1) !important;
     font-size: 15px;
     font-weight: 500 !important;
     color: #252525;
@@ -203,7 +213,8 @@
 
 .ant-table-row-selected {
     .ant-table-cell{
-    background-color: rgba(25, 168, 115, .2) !important;
+    // background-color: rgba(25, 168, 115, .2) !important;
+    background-color: rgba(220, 237, 228, 1) !important;
     border-radius: 0 !important;
     }
 }
