@@ -8,6 +8,7 @@ import Customers from "./components/Customers/Customer"
 import {Routes ,Route } from 'react-router-dom'
 import Page_heading from './components/Page_Heading/Page_heading';
 import Dashboard from './components/Dashboard/Dashboard';
+import AddNewCustomer from './components/Customers/AddNewCustomer';
 
 function App() {
   return (
@@ -22,8 +23,9 @@ function App() {
           
 
           <Routes>
+          <Route path='/' element={<Dashboard/>} />
             <Route path='customers' element={<Customers/>} />
-            <Route path='/' element={<Dashboard/>} />
+            <Route path='addcustomers' element={<AddNewCustomer/>} />
           </Routes>
           <Footer />
           </div>

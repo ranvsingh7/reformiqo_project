@@ -1,0 +1,166 @@
+.newcustomer
+{
+    background-color: white;
+    height: 750px;
+    width: 750px;
+    margin-top: 30px;
+    overflow: scroll;
+    margin-left: 30px;
+    //-ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  
+}
+// .newcustomer::-webkit-scrollbar {
+//     display: none;
+//   }
+// .newcustomer ::-webkit-scrollbar{
+//     width:0px;
+// }
+
+.container_details1{
+    display: flex;
+    padding: 15px 20px;
+}
+.form-left
+{
+    width: 50%;
+ //  border: 1px solid;
+    height:715px;
+}
+.form-right
+{
+    width: 50%;
+   // border: 1px solid;
+    height: 715px;
+}
+.box_heading1{
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 20px;
+    width: 130px;
+    color:#566A7F;
+    height: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: PublicSans-SemiBold;
+}
+.page_heading{
+    font-size: 22px ;
+    color: #566A76;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    .heading_parent{
+        color: #A1ACB8;
+        font-weight: 400;
+
+    }
+}
+.label
+{
+    font-size: 12px;
+  //  font-family: Public sans-serif;
+}
+.customerinput
+{
+    height: 38px;
+    width: 330px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+
+.customerinput1
+{
+    height: 38px;
+    width: 150px;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+.customerdropdown
+{
+    border:1px solid;
+    height: 38px;
+    width: 330px;
+    border-radius: 7px;
+    margin-top: 4px;
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.customeraddress
+{
+    border: 1px solid;
+   // height: 80px;
+    width: 317px;
+    border-radius: 7px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+    padding-bottom: 65px;
+    outline: none;
+    padding-left: 13px;
+    padding-top:7px;
+
+    
+}
+
+.customeraddress::placeholder{
+    opacity: 0.5;
+    font-size: 13px;
+    color:#697A8D;
+    font-weight: 500;
+}
+
+.customerinputfield
+{
+    border:1px solid;
+    height: 38px;
+    width: 330px;
+    border-radius: 7px;
+    margin-top: 4px;
+    display: flex;
+    margin-bottom: 18px;
+}
+.customerbutton_bottom
+{
+    display: flex;
+    float: right;
+    margin-right: 32px;
+    margin-top: 109px;
+    gap: 12px;
+}
+.cancelbutton
+{
+    width: 108px;
+    height: 29px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #697A8D;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.savebutton
+{
+    width: 94px;
+    height: 29px;
+    border-radius: 5px;
+    color: white;
+    background-color: #19A873;
+    font-size: 15px;
+    font-weight: bold;
+}
+.customerimg
+{
+width:16px;
+ height:13px;
+  padding:12px;
+}
+::placeholder { /* Most modern browsers support this now. */
+    opacity: 0.5;
+    font-size: 13px;
+    color:#697A8D;
+    font-weight: 500;
+ }
