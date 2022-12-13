@@ -16,6 +16,7 @@ import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
 import { render } from "@testing-library/react";
 import ReactToPrint from "react-to-print";
+import { Link } from "react-router-dom";
 
 const Customer = () => {
   const [exportOpen, setExportOpen] = useState(false);
@@ -395,10 +396,10 @@ const Customer = () => {
             </div>
             Filter
           </div>
-          <div className="tableBtn addNewBtn">
+          <Link className="tableBtn addNewBtn" exact to= "/addcustomers">
             <div className="addNew_btn_icon ">+</div>
             New
-          </div>
+          </Link>
           <div className="settings" ref={menuRef}>
             <img
               src="./images/icons/setting.svg"
