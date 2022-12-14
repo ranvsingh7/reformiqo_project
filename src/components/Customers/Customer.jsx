@@ -403,10 +403,10 @@ const Customer = () => {
 
           <Link className="tableBtn addNewBtn" exact to= "/addcustomers" >
 
-            <div className="addNew_btn_icon ">+</div>
+            <div className="addNewBtn">+</div>
             New
             </Link>
-          {/* </div> */}
+
           
           
           <div className="settings" ref={menuRef}>
