@@ -13,16 +13,16 @@ const initialFieldValues = {
 function AddNewCustomer(props) {
      const [values, setValues] = useState(initialFieldValues);
      const [customer, setCustomer] = useState([]);
-
+     const [gst, setGst] = useState(false)
+     console.log(values);
      let gstinparams =values.gstin;
 
     const getData = () => {
-        fetch  (`https://commonapi.mastersindia.co/commonapis/searchgstin?gstin=${gstinparams}`,{ mode: 'no-cors'},
+        fetch  (`https://commonapi.mastersindia.co/commonapis/searchgstin?gstin=${gstinparams}`,
         {
             headers: {
             'Authorization': 'Bearer 0ab31ef7392227173c6e8d34195e86d5eb0da1e9',
             'client_id' : 'JarZChUcsytSBbnkpt',
-            'Accept-Control-Allow-Origin': '*',
         },
         })
             .then((response) => {
@@ -37,9 +37,16 @@ function AddNewCustomer(props) {
 useEffect(() => {
   getData()
   console.log("Getting Data");
- // console.log(customer);
-}, [gstinparams]);
+  console.log(values.gstin);
+}, [gst]);
 
+
+
+const onBlur = (e) => {
+  alert(e.target.value)
+  setGst (!gst);
+  console.log(gst);
+  };    
 
 
 const onChange = (e) => {
@@ -98,8 +105,10 @@ const onChange = (e) => {
 
                         <img src={logo} className="customerimg"/>
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder"   name="gstin"
-                  value={values.gstin}
-                  onChange={onChange}/> 
+                        value={values.gstin}
+                   onBlur={onBlur}
+                   onChange={onChange}
+                  /> 
 
                     </div>
                     <label className='label' style={{marginTop:"5px"}}>Business Name</label><br/>
