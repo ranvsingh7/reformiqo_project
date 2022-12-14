@@ -3,11 +3,14 @@
     background-color: white;
     height: 750px;
     width: 750px;
-    margin-top: 30px;
-    overflow: scroll;
+
+    margin-top: 0px;
+    //overflow: scroll;
     margin-left: 30px;
     //-ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  
+    border-radius: 8px;
+
 }
 // .newcustomer::-webkit-scrollbar {
 //     display: none;
@@ -18,7 +21,9 @@
 
 .container_details1{
     display: flex;
-    padding: 15px 20px;
+
+    padding: 23px 24px;
+
 }
 .form-left
 {
@@ -31,26 +36,30 @@
     width: 50%;
    // border: 1px solid;
     height: 715px;
+
+    margin-left: 40px;
 }
 .box_heading1{
+    padding-top: 14px;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 0px;
     display: flex;
-    margin-left: 20px;
+    margin-left: 24px;
     width: 130px;
-    color:#566A7F;
+    color: #566A7F;
     height: 24px;
     font-weight: bold;
     font-size: 18px;
-    font-weight: PublicSans-SemiBold;
+   // font-weight: Publi
 }
 .page_heading{
-    font-size: 22px ;
+    font-size: 22px;
     color: #566A76;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 29px;
+
     .heading_parent{
         color: #A1ACB8;
         font-weight: 400;
@@ -60,6 +69,9 @@
 .label
 {
     font-size: 12px;
+
+    color:#566A7F;
+
   //  font-family: Public sans-serif;
 }
 .customerinput
@@ -68,6 +80,9 @@
     width: 330px;
     border-radius: 7px;
     margin-top: 5px;
+
+    border-color: #D9DEE3;
+
 }
 
 
@@ -75,8 +90,11 @@
 {
     height: 38px;
     width: 150px;
-    border-radius: 7px;
+
+    border-radius: 5px;
     margin-top: 5px;
+    border-color: #D9DEE3;
+
 }
 
 .customerdropdown
@@ -84,10 +102,13 @@
     border:1px solid;
     height: 38px;
     width: 330px;
-    border-radius: 7px;
+
+    border-radius: 5px;
     margin-top: 4px;
     display: flex;
     margin-bottom: 18px;
+    border-color: #D9DEE3;
+
 }
 
 .customeraddress
@@ -95,13 +116,17 @@
     border: 1px solid;
    // height: 80px;
     width: 317px;
-    border-radius: 7px;
+
+    border-radius: 5px;
+
     margin-top: 4px;
     margin-bottom: 18px;
     padding-bottom: 65px;
     outline: none;
     padding-left: 13px;
     padding-top:7px;
+
+    border-color: #D9DEE3;
 
     
 }
@@ -118,10 +143,13 @@
     border:1px solid;
     height: 38px;
     width: 330px;
-    border-radius: 7px;
+
+    border-radius: 5px;
     margin-top: 4px;
     display: flex;
     margin-bottom: 18px;
+    border-color: #D9DEE3;
+
 }
 .customerbutton_bottom
 {
@@ -130,12 +158,16 @@
     margin-right: 32px;
     margin-top: 109px;
     gap: 12px;
+
+    border-color: #D9DEE3;
 }
 .cancelbutton
 {
+    border: none;
     width: 108px;
     height: 29px;
-    border-radius: 5px;
+    border-radius: 4px;
+
     color: #FFFFFF;
     background-color: #697A8D;
     font-size: 15px;
@@ -144,9 +176,12 @@
 }
 .savebutton
 {
+
+    border: none;
     width: 94px;
     height: 29px;
-    border-radius: 5px;
+    border-radius: 4px;
+
     color: white;
     background-color: #19A873;
     font-size: 15px;
@@ -163,4 +198,68 @@ width:16px;
     font-size: 13px;
     color:#697A8D;
     font-weight: 500;
+
  }
+
+ .customerinput
+ {
+    option{
+        border:1px solid;
+
+    }
+ }
+
+
+
+//  .dropbtn {
+//     background-color: #04AA6D;
+//     color: white;
+//     padding: 16px;
+//     font-size: 16px;
+//     border: none;
+//     cursor: pointer;
+//   }
+  
+//   .dropbtn:hover, .dropbtn:focus {
+//     background-color: #3e8e41;
+//   }
+  
+//   #myInput {
+//     box-sizing: border-box;
+//     //background-image: url('searchicon.png');
+//     background-position: 14px 12px;
+//     background-repeat: no-repeat;
+//     font-size: 16px;
+//     padding: 14px 20px 12px 45px;
+//     border: none;
+//     border-bottom: 1px solid #ddd;
+//   }
+  
+//   #myInput:focus {outline: 3px solid #ddd;}
+  
+//   .dropdown {
+//     position: relative;
+//     display: inline-block;
+//   }
+  
+//   .dropdown-content {
+//     display: none;
+//     position: absolute;
+//     background-color: #f6f6f6;
+//     min-width: 230px;
+//     overflow: auto;
+//     border: 1px solid #ddd;
+//     z-index: 1;
+//   }
+  
+//   .dropdown-content a {
+//     color: black;
+//     padding: 12px 16px;
+//     text-decoration: none;
+//     display: block;
+//   }
+  
+//   .dropdown a:hover {background-color: #ddd;}
+  
+//   .show {display: block;}
+

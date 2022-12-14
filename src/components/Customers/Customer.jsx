@@ -21,7 +21,7 @@ import { BiFilter } from "react-icons/bi";
 import { render } from "@testing-library/react";
 import ReactToPrint from "react-to-print";
 import { Link } from "react-router-dom";
-const { RangePicker } = DatePicker;
+
 const Customer = () => {
   const [exportOpen, setExportOpen] = useState(false);
   const [settingOpen, setSettingOpen] = useState(false);
@@ -398,7 +398,9 @@ const Customer = () => {
             </div>
             Filter
           </div>
-          <Link className="tableBtn addNewBtn" exact to="/addcustomers">
+
+          <Link className="tableBtn addNewBtn" exact to= "/addcustomers">
+
             <div className="addNew_btn_icon ">+</div>
             New
           </Link>
