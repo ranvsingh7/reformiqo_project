@@ -1,0 +1,126 @@
+.rdrStartEdge{
+    background-color: #19A873 !important;
+}
+.rdrInRange{
+    background-color: #E3F1EC !important;
+    
+}
+.rdrDayNumber{
+    span{
+        // color: #697A8D !important;
+    }
+}
+
+
+    .rdrStartEdge+.rdrDayNumber{
+        // color: #ffff !important;
+        span{
+            // color: #ffff !important;
+        }
+    }
+    .rdrEndEdge+.rdrDayNumber{
+        // color: #ffff !important;
+        span{
+            // color: #ffff !important;
+        }
+    }
+
+
+    .rdrEndEdge{
+    background-color: #19A873 !important;
+    }
+    .rdrInRange+.rdrDayNumber{
+        span{
+        color: black !important;
+    }
+    }
+
+
+.rdrCalendarwrapper:not(.rdrDateRangeWrapper) .rdrDayHovered .rdrDayNumber:after{ content: '';
+border: 1px solid red !important;
+// border-radius: 1. 333em !important;
+// position: absolute !important;
+// top: -2px !important;
+// bottom: -2px !important;
+// left: Opx !important;
+// right: Opx !important;
+// background: transparent !important;
+}
+.rdrDateRangePickerWrapper{
+    flex-direction: row-reverse !important;
+    .rdrDefinedRangesWrapper{
+        border-left: 2px solid #E8ECF1;
+        // height: 330px;
+        // margin-top: 55.4px;
+    }
+}
+.rdrDateDisplayWrapper{
+    display: none;
+}
+
+.dateRangePicker{
+    position: absolute;
+    z-index: 99999;
+    top: 30;
+}
+
+
+.calendarWrap{
+    position: relative;
+}
+.calendarInput{
+    width: 316px;
+    height: 38px;
+    // border: 1px solid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    background-color: #ffff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    
+
+    img{
+        margin: 0px 13px;
+    }
+    input{
+        width: 85%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+}
+
+.rdrWeekDay{
+    color: #19A873;
+}
+.rdrNextPrevButton{
+    background-color: #ffff;
+    i{
+        filter: invert(51%) sepia(100%) saturate(358%) hue-rotate(106deg) brightness(85%) contrast(90%);
+
+    }
+}
+
+// input.inputBox {
+//     font-size: 22px;
+//     padding: 5px 8px 4px 8px;
+//     border-radius: 3px;
+//     border: 1px solid #666;
+//   }
+  
+//   .calendarWrap {
+//     display: inline-block;
+//     position: relative;
+//   }
+  
+//   .calendarElement {
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     top: 40px;
+//     border: 1px solid #ccc;
+//     z-index: 999;
+//   }
+

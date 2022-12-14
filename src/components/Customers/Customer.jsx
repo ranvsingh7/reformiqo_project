@@ -13,9 +13,10 @@ import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; 
 import { addDays } from 'date-fns';
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
 
 
-import { CgSearch } from "react-icons/cg";
+import { CgLaptop, CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
 import { render } from "@testing-library/react";
@@ -331,7 +332,8 @@ const Customer = () => {
   const componentRef = useRef();
 
   return (
-    <div className="customers">
+    <>
+      <div className="customers">
       <Page_heading
         parent={"Business Account"}
         child={window.location.pathname.slice(1)}
@@ -399,11 +401,14 @@ const Customer = () => {
             Filter
           </div>
 
-          <Link className="tableBtn addNewBtn" exact to= "/addcustomers">
+          <Link className="tableBtn addNewBtn" exact to= "/addcustomers" >
 
             <div className="addNew_btn_icon ">+</div>
             New
-          </Link>
+            </Link>
+          {/* </div> */}
+          
+          
           <div className="settings" ref={menuRef}>
             <img
               src="./images/icons/setting.svg"
@@ -460,14 +465,9 @@ const Customer = () => {
         </div>
       </div>
 
-    <DateRangePicker onChange={item => setDateRange([item.selection])}
-  showSelectionPreview={true}
-  moveRangeOnFirstSelection={false}
-  months={2}
-  ranges={dateRange}
-  direction="horizontal"/>
-  <RangePicker />
-
+    
+    {/* <DateRangePickerComp /> */}
+  
 
 
       <div className="tableData">
@@ -495,6 +495,7 @@ const Customer = () => {
         {/* </Resizable> */}
       </div>
     </div>
+    </>
   );
 };
 
