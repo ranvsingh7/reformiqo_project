@@ -14,6 +14,7 @@ body{
     transition: all .5s ease-in-out;
     overflow: hidden;
     height: 100vh;
+    margin-left: -5px;
     // border: 1px solid;
 
     .sidebar_container{
@@ -97,6 +98,7 @@ body{
     width: 85px;
     margin-right: 115px;
     min-width: 93.5px;
+    margin-left: -5px;
     
 
     .sidebar_logo{

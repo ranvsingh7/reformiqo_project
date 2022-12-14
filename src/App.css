@@ -1,3 +1,5 @@
+
+
 .App{
   display: flex;
 }
@@ -5,7 +7,8 @@
   display: flex;
   /* border: 1px solid; */
   width: 100%;
-}
+  }
+
 .rightScreen{
   /* border: 1px solid; */
   width: 100%;
