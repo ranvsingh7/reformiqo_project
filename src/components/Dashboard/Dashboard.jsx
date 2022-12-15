@@ -3,12 +3,6 @@ import DateRangePickerComp from "../DateRangePicker/DateRangePicker";
 import "./Dashboard.scss";
 
 
-
-import { DateRangePicker } from 'react-date-range'
-
-import format from 'date-fns/format'
-import { addDays } from 'date-fns'
-
 const Dashboard = () => {
   return (
     <>
@@ -145,9 +139,8 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
-    <DateRangePickerComp />
+    {/* <DateRangePickerComp /> */}
 
-    {/* <DateRangePicker /> */}
     </>
   );
 };

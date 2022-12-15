@@ -2,6 +2,7 @@
     // border: 1px solid;
     margin: auto;
     width: 95%;
+    max-width: 1300px;
     height: 580px;
     margin-top: 30px;
     overflow: scroll;
@@ -100,13 +101,21 @@
         .addNewBtn{
             color: #ffff;
             background-color: #19A873;
-            border: 1px solid red;
+            // border: 1px solid red;
             gap: 5px;
             border: none;
+            width: auto;
+            padding: 0px 13px;
             justify-content: center;
+            display: flex;
+            align-items: center;
+            .addNewBtn_text{
+                min-width: 90px;
+            }
 
-            .btn_icon{
-                font-size: 20px;
+            .add_symbol{
+                font-size: 18px;
+                margin-top: -4px;
             }
         }
     }
@@ -289,5 +298,16 @@ th{.ant-checkbox-checked{
         // color: red !important;
         font-size: 14px;
         color: #252525 !important;
+
     }
+}
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-table-wrapper .ant-table-thead >tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    width: 0px !important;
+}
+
+
+.select{
+    width: 200px;
+    margin-top: 50px;
 }
