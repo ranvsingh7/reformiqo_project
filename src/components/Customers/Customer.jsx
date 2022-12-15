@@ -3,23 +3,20 @@ import React from "react";
 import Page_heading from "../Page_Heading/Page_heading";
 import { useState, useEffect, useRef } from "react";
 import "./Customers.scss";
-import { Table, Checkbox, Affix, DatePicker } from "antd";
-import { Resizable } from "react-resizable";
+import { Table } from "antd";
 import { CSVLink } from "react-csv";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; 
 import { addDays } from 'date-fns';
 import 'react-date-range/dist/theme/default.css'; // theme css file
-import { CalendarComponent } from '@syncfusion/ej2-react-calendars';
 
 
-import { CgLaptop, CgSearch } from "react-icons/cg";
+
+import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
-import { render } from "@testing-library/react";
 import ReactToPrint from "react-to-print";
 import { Link } from "react-router-dom";
 
@@ -331,6 +328,8 @@ const Customer = () => {
 
   const componentRef = useRef();
 
+
+
   return (
     <>
       <div className="customers">
@@ -403,8 +402,8 @@ const Customer = () => {
 
           <Link className="tableBtn addNewBtn" exact to= "/addcustomers" >
 
-            <div className="addNewBtn">+</div>
-            New
+            <div className="add_symbol">+</div>
+            <div className="addNewBtn_text">New Customer</div>
             </Link>
 
           
@@ -468,7 +467,7 @@ const Customer = () => {
     
     {/* <DateRangePickerComp /> */}
   
-
+      
 
       <div className="tableData">
         {/* <Resizable> */}
@@ -482,12 +481,12 @@ const Customer = () => {
               setSelectedRowKeys(selectedRowKeys);
               setSelectedRows(selectedRows);
             },
-            checkboxStyle: { color: "red" },
+
           }}
           dataSource={dataSource}
           columns={columns}
           scroll={{ y: 400, x: 1120 }}
-          style={{ maxWidth: 1133 }}
+          style={{ maxWidth: 1600 }}
           rowClassName={(record) =>
             record.key % 2 === 0 ? "highlight_row" : ""
           }
