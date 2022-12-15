@@ -3,6 +3,7 @@ import React,{useEffect, useState} from 'react';
 import Page_heading from '../Page_Heading/Page_heading';
 import "./AddNewCustomer.scss";
 import logo from "./images/Email.svg";
+import Select from "react-select";
 
 
 const initialFieldValues = {
@@ -23,6 +24,7 @@ function AddNewCustomer(props) {
             headers: {
             'Authorization': 'Bearer 0ab31ef7392227173c6e8d34195e86d5eb0da1e9',
             'client_id' : 'JarZChUcsytSBbnkpt',
+          
         },
         })
             .then((response) => {
@@ -43,7 +45,7 @@ useEffect(() => {
 
 
 const onBlur = (e) => {
-  alert(e.target.value)
+  //alert(e.target.value)
   setGst (!gst);
   console.log(gst);
   };    
@@ -60,46 +62,38 @@ const onChange = (e) => {
     console.log(name);
   };
 
+
+const option=[
+  {
+    value:'one' , label: 'one',  
+  },
+  {
+    value:'two' , label: 'two'
+  }
+]
+
   return (
     <>
-    <Page_heading parent={"Business Account"} child={"Add New Customer"}/>
+    <div className='addcustomer_heading'>
+    <Page_heading  parent={"Business Account"} child={"Add New Customer"}/>
+    </div>
     <div style={{height:"550px", overflow:"scroll"}}>
-    {/* <table border="2px" className = "table table-striped table-bordered">
-
-<thead>
-    <tr>
-        <th>User Id</th>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Completed</th>
-    </tr>
-</thead>
-<tbody>
-
-{customer.map(cu =>
-<tr>
-<td>{cu.lgnm}</td>
-
-</tr>
-)
-}
-</tbody>
-</table> */}
+    
     <div className='newcustomer'>
         <h1 className='box_heading1'>New Customer</h1>
               <div className='container_details1' >
                 <div className='form-left'>
 
                     <label className='label'>GST Treatment</label><br/>
+                    <Select  placeholder="Select value" options={option}/>
+                    {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="" >Select value</option>
+                    <option value="" selected hidden >Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
                      <option value="4">4</option>
-                    </select>
+                    </select> */}
                     <label className='label' style={{marginTop:"5px"}}>GST No.</label><br/>
                     <div className='customerdropdown' style={{marginTop:"5px"}}>
 
@@ -117,27 +111,27 @@ const onChange = (e) => {
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder"/> 
                     </div>
                     <label className='label'>Type Category</label><br/>
+                    <Select  placeholder="Select value" options={option}/>
+                    {/* <select  className='customerinput' style={{marginBottom:"18px",  color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <select  className='customerinput' style={{marginBottom:"18px",  color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="">Select value</option>
+                    <option value="" selected hidden>Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
                      <option value="4">4</option>
-                    </select>
+                    </select> */}
                     <label className='label' style={{marginTop:"5px"}}>Pancard</label><br/>
                     <div className='customerdropdown'>
                         <img src={logo} className="customerimg" />
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder"/> 
                     </div>
-                    <div style={{display:"flex"}}>
+                    <div style={{display:"flex", gap:"30px"}}>
                         <div style={{width:"50%"}}>
                         <label className='label' style={{marginTop:"5px"}}>Currency</label><br/>
 
                     <select className='customerinput1' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <option value="">Select value</option>
+                    <option value="" selected hidden>Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
@@ -149,7 +143,7 @@ const onChange = (e) => {
 
                     <select className='customerinput1' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <option value="">Select value</option>
+                    <option value="" selected hidden>Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
@@ -180,50 +174,27 @@ const onChange = (e) => {
                         <input type="text" className='customeraddress' placeholder="Placeholder"/> 
                       
                     <label className='label'>Default Place of Supply</label><br/>
+                    <Select  placeholder="Select value" options={option}/>
+                    {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="">Select value</option>
+                    <option value="" selected hidden>Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
                      <option value="4">4</option>
-                    </select>
+                    </select> */}
                     <label className='label'>Contacts</label><br/>
+                    <Select  placeholder="Select value" options={option}/>
+                    {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="">Select value</option>
+                    <option value="" selected hidden>Select value</option>
                      <option value="1">1</option>
                      <option value="2">2</option>
                      <option value="3">3</option>
                      <option value="4">4</option>
-                    </select>
+                    </select> */}
                     <label className='label'>Ownership</label><br/>
-
-                 <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="">Select value</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                     <option value="4">4</option>
-
-                    </select> 
-                    {/* <div class="dropdown">
-  <button onclick={() => myFunction} class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content">
-    <input type="text" placeholder="Search.." id="myInput" onkeyup={() => filterFunction}/>
-    <a href="#about">About</a>
-    <a href="#base">Base</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-    <a href="#custom">Custom</a>
-    <a href="#support">Support</a>
-    <a href="#tools">Tools</a>
-  </div> 
-</div>*/}
-
+                    <Select  placeholder="Select value" options={option}/>
 
                     <div className='customerbutton_bottom'>
             <button type='button' className='cancelbutton'>Cancel</button>
