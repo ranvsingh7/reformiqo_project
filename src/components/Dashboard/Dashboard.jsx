@@ -7,7 +7,9 @@ const Dashboard = () => {
   return (
     <>
         <div className="dashboard_details">
-      <div className="sales_order">
+
+          <div className="dashboard_container">
+          <div className="sales_order">
         <div className="container_dashboard_details">
           <div className="box_heading">
             <h3>Sales Order</h3>
@@ -138,6 +140,8 @@ const Dashboard = () => {
 
         </div>
       </div>
+          </div>
+      
     </div>
     {/* <DateRangePickerComp /> */}
 
@@ -146,3 +150,6 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+
+

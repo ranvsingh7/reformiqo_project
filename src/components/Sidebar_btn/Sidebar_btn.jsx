@@ -117,9 +117,11 @@ const Sidebar_btn = ({ item, active, setActive }) => {
           <div className="right_border"></div>
         </div>
         <div className={`dropdown_item_container ${open && "open_dropdown"}`}>
-          {item.childrens.map((btn) => {
+          {item.childrens.map((btn,index,row) => {
+            console.log(btn,index,row.length)
             return (
               <NavLink to={btn.path}>
+                <span className={`v-line ${index === 0 && "first-v-line"} ${index === row.length-1 && "last-v-line"} `}></span>
                 <div className="btn dropdown_margin bullet_item" onClick={dropdownBtnActive}>
                   <div className="btn_container">
                     <div className="bullet_box">
