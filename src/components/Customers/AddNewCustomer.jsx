@@ -4,6 +4,7 @@ import Page_heading from '../Page_Heading/Page_heading';
 import "./AddNewCustomer.scss";
 import logo from "./images/Email.svg";
 import Select from "react-select";
+import DropdownWithProfile from '../DropdownWithProfile/DropdownWithProfile';
 
 
 const initialFieldValues = {
@@ -65,11 +66,66 @@ const onChange = (e) => {
 
 const option=[
   {
-    value:'one' , label: 'one',  
+    value:'one' , label: <div style={{display:"flex", justifyContent:"space-between"}}>
+       <div>
+    <div className='drpName'>Parth Goswami</div>
+    <div className='drpEmail'>Parth.goswami@reformiqo.com</div>
+    </div>
+   <div>
+    <div className='drpContact'>Contact Added</div>
+    <div className='drpDate'>10 Dec 2022</div>
+    </div>
+    </div>
   },
   {
-    value:'two' , label: 'two'
+    value:'two' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
+    <div>
+    <div className='drpName'>Parth Goswami</div>
+    <div className='drpEmail'>Parth.goswami@reformiqo.com</div>
+    </div>
+   <div>
+    <div className='drpContact'>Contact Added</div>
+    <div className='drpDate'>10 Dec 2022</div>
+    </div>
+    </div>
+  },
+  {
+    value:'three' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
+     <div>
+    <div className='drpName'>Parth Goswami</div>
+    <div className='drpEmail'>Parth.goswami@reformiqo.com</div>
+    </div>
+   <div>
+    <div className='drpContact'>Contact Added</div>
+    <div className='drpDate'>10 Dec 2022</div>
+    </div>
+    </div>
+  },
+  {
+    value:'four' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
+     <div>
+    <div className='drpName'>Parth Goswami</div>
+    <div className='drpEmail'>Parth.goswami@reformiqo.com</div>
+    </div>
+   <div>
+    <div className='drpContact'>Contact Added</div>
+    <div className='drpDate'>10 Dec 2022</div>
+    </div>
+    </div>
+  },
+  {
+    value:'five' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
+    <div>
+    <div className='drpName'>Parth Goswami</div>
+    <div className='drpEmail'>Parth.goswami@reformiqo.com</div>
+    </div>
+   <div>
+    <div className='drpContact'>Contact Added</div>
+    <div className='drpDate'>10 Dec 2022</div>
+    </div>
+    </div>
   }
+
 ]
 
   return (
@@ -77,7 +133,7 @@ const option=[
     <div className='addcustomer_heading'>
     <Page_heading  parent={"Business Account"} child={"Add New Customer"}/>
     </div>
-    <div style={{height:"550px", overflow:"scroll"}}>
+    <div className='customerform'>
     
     <div className='newcustomer'>
         <h1 className='box_heading1'>New Customer</h1>
@@ -85,7 +141,7 @@ const option=[
                 <div className='form-left'>
 
                     <label className='label'>GST Treatment</label><br/>
-                    <Select  placeholder="Select value" options={option}/>
+                    <Select  placeholder="Select value" options={option} />
                     {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
                     <option value="" selected hidden >Select value</option>
@@ -194,7 +250,8 @@ const option=[
                      <option value="4">4</option>
                     </select> */}
                     <label className='label'>Ownership</label><br/>
-                    <Select  placeholder="Select value" options={option}/>
+                    <Select  placeholder="Select value" style={{height:"41px"}} options={option}/>
+                    <DropdownWithProfile/>
 
                     <div className='customerbutton_bottom'>
             <button type='button' className='cancelbutton'>Cancel</button>
