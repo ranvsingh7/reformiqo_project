@@ -311,3 +311,20 @@ th{.ant-checkbox-checked{
     width: 200px;
     margin-top: 50px;
 }
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-checkbox-checked:after {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    visibility: hidden;
+    border: 2px solid #19A873 !important;
+    animation-name: css-dev-only-do-not-override-1ij74fp-antCheckboxEffect;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    content: "";
+    transition: all 0.3s;
+}

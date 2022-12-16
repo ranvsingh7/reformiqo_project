@@ -1,126 +1,178 @@
-.rdrStartEdge{
-    background-color: #19A873 !important;
-}
-.rdrInRange{
-    background-color: #E3F1EC !important;
-    
-}
-.rdrDayNumber{
-    span{
-        // color: #697A8D !important;
-    }
+.rdrStartEdge {
+  background-color: #19a873 !important;
 }
 
-
-    .rdrStartEdge+.rdrDayNumber{
-        // color: #ffff !important;
-        span{
-            // color: #ffff !important;
-        }
-    }
-    .rdrEndEdge+.rdrDayNumber{
-        // color: #ffff !important;
-        span{
-            // color: #ffff !important;
-        }
-    }
-
-
-    .rdrEndEdge{
-    background-color: #19A873 !important;
-    }
-    .rdrInRange+.rdrDayNumber{
-        span{
-        color: black !important;
-    }
-    }
-
-
-.rdrCalendarwrapper:not(.rdrDateRangeWrapper) .rdrDayHovered .rdrDayNumber:after{ content: '';
-border: 1px solid red !important;
-// border-radius: 1. 333em !important;
-// position: absolute !important;
-// top: -2px !important;
-// bottom: -2px !important;
-// left: Opx !important;
-// right: Opx !important;
-// background: transparent !important;
+.rdrStartEdge + .rdrDayNumber {
+  span {
+    color: white !important;
+  }
 }
-.rdrDateRangePickerWrapper{
-    flex-direction: row-reverse !important;
-    .rdrDefinedRangesWrapper{
-        border-left: 2px solid #E8ECF1;
-        // height: 330px;
-        // margin-top: 55.4px;
-    }
+.rdrEndEdge ~ .rdrDayNumber span {
+  color: white !important;
 }
-.rdrDateDisplayWrapper{
-    display: none;
+.rdrInRange {
+  background-color: #e3f1ec !important;
 }
 
-.dateRangePicker{
-    position: absolute;
-    z-index: 99999;
-    top: 30;
+.rdrEndEdge {
+  background-color: #19a873 !important;
+}
+.rdrInRange + .rdrDayNumber {
+  span {
+    color: black !important;
+  }
 }
 
-
-.calendarWrap{
-    position: relative;
+.rdrCalendarwrapper:not(.rdrDateRangeWrapper)
+  .rdrDayHovered
+  .rdrDayNumber:after {
+  content: "";
+  border: 1px solid red !important;
+  // border-radius: 1. 333em !important;
+  // position: absolute !important;
+  // top: -2px !important;
+  // bottom: -2px !important;
+  // left: Opx !important;
+  // right: Opx !important;
+  // background: transparent !important;
 }
-.calendarInput{
-    width: 316px;
-    height: 38px;
-    // border: 1px solid;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 8px;
-    background-color: #ffff;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-
-    
-
-    img{
-        margin: 0px 13px;
-    }
-    input{
-        width: 85%;
-        height: 100%;
-        border: none;
-        outline: none;
-    }
+.rdrDateRangePickerWrapper {
+  flex-direction: row-reverse !important;
+  .rdrDefinedRangesWrapper {
+    border-left: 2px solid #e8ecf1;
+    // height: 330px;
+    // margin-top: 55.4px;
+  }
+}
+.rdrDateDisplayWrapper {
+  display: none;
 }
 
-.rdrWeekDay{
-    color: #19A873;
-}
-.rdrNextPrevButton{
-    background-color: #ffff;
-    i{
-        filter: invert(51%) sepia(100%) saturate(358%) hue-rotate(106deg) brightness(85%) contrast(90%);
-
-    }
+.dateRangePicker {
+  position: absolute;
+  z-index: 99999;
+  top: 30;
 }
 
-// input.inputBox {
-//     font-size: 22px;
-//     padding: 5px 8px 4px 8px;
-//     border-radius: 3px;
-//     border: 1px solid #666;
-//   }
-  
-//   .calendarWrap {
-//     display: inline-block;
-//     position: relative;
-//   }
-  
-//   .calendarElement {
-//     position: absolute;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     top: 40px;
-//     border: 1px solid #ccc;
-//     z-index: 999;
-//   }
+.calendarWrap {
+  position: relative;
+}
+.calendarInput {
+  width: 316px;
+  height: 38px;
+  // border: 1px solid;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  background-color: #ffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 
+  img {
+    margin: 0px 13px;
+  }
+  input {
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+.rdrWeekDay {
+  color: #19a873;
+}
+.rdrNextPrevButton {
+  background-color: #ffff;
+  i {
+    filter: invert(51%) sepia(100%) saturate(358%) hue-rotate(106deg)
+      brightness(85%) contrast(90%);
+  }
+}
+
+.rdrDayToday .rdrDayNumber span:after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background: #31a564;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive),
+.rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span,
+.rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+  color: black;
+}
+
+.rdrCalendarWrapper:not(.rdrDateRangeWrapper)
+  .rdrDayHovered
+  .rdrDayNumber:after {
+  content: "";
+  border: 8px solid red !important;
+  border-radius: 1.333em;
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: 0px;
+  right: 0px;
+  background: black !important;
+}
+
+.rdrStaticRangeSelected {
+  color: #19a873 !important;
+}
+.rdrStaticRange:hover .rdrStaticRangeLabel,
+.rdrStaticRange:focus .rdrStaticRangeLabel {
+  background: rgba(220, 237, 228, 1) !important;
+  // background-color: rgba(220, 237, 228, 1) !important;
+}
+
+.rdrNextPrevButton:hover {
+  background: rgba(220, 237, 228, 1) !important;
+}
+.rdrMonthAndYearPickers select:hover {
+  background-color: rgba(220, 237, 228, 1) !important;
+}
+
+.rdrDayStartPreview,
+.rdrDayInPreview,
+.rdrDayEndPreview {
+  background: rgba(255, 255, 255, 0.09);
+  position: absolute;
+  top: 3px;
+  left: 0px;
+  right: 0px;
+  bottom: 3px;
+  pointer-events: none;
+  border: 0px solid #19a873;
+  z-index: 1;
+}
+
+.rdrDayStartPreview {
+  border-top-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
+  border-top-left-radius: 1.333em;
+  border-bottom-left-radius: 1.333em;
+  left: 0px;
+}
+
+.rdrDayInPreview {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.rdrDayEndPreview {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-top-right-radius: 1.333em;
+  border-bottom-right-radius: 1.333em;
+  right: 2px;
+  right: 0px;
+}
