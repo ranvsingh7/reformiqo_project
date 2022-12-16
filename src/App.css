@@ -14,3 +14,10 @@
   width: 100%;
   /* overflow: scroll; */
 }
+
+
+@media screen and (width: 668px) {
+ .sidebar{
+  display: none;
+ }
+}

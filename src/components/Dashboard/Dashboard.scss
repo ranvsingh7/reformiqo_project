@@ -1,21 +1,44 @@
+
+
+
 .dashboard_details{
     // border: 1px solid;
+    
     // width: 1122px;
     width: 95%;
-    min-width: 95%;
-    max-width: 1300px;
+    min-width: 300px;
+    max-width: 1600px !important;
 
     margin: auto;
     margin-top: 30px;
     border-radius: 8px;
-    background-color: #ffff;
+    // background-color: #ffff;
+    // background-color: #19A873;
     height: 108px;
     display: flex;
     align-items: center;
     // gap: 8px;
     justify-content: center;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    overflow: wrap;
 
+    .dashboard_container{
+        display: flex;
+        // border: 1px solid;
+        max-width: 1300px;
+        justify-content: space-around;
+        background-color: #ffff;
+        border-radius: 8px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+  
+
+
+
+    
 
     .sales_order{
         padding: 14px 16px;
@@ -23,7 +46,7 @@
         background-color: #ffff;
         width: fit-content;
         border-radius: 8px 0px 0px 8px;
-        border-right: 5px solid #E8ECF1;
+        // border-right: 5px solid #E8ECF1;
         .container_dashboard_details{
             // border: 1px solid;
         width: 269px;
@@ -35,7 +58,8 @@
         padding: 14px 16px;
         // border:1px solid red;
         background-color: #ffff;
-        border-right: 5px solid #E8ECF1;
+        // border-right: 5px solid #E8ECF1;
+        border-left: 5px solid #E8ECF1;
         
 
         .container_dashboard_details{
@@ -50,7 +74,8 @@
         padding: 14px 16px;
         // border:1px solid red;
         background-color: #ffff;
-        border-right: 5px solid #E8ECF1;
+        // border-right: 5px solid #E8ECF1;
+        border-left: 5px solid #E8ECF1;
         .container_dashboard_details{
             // border: 1px solid;
             width: 140px;
@@ -63,6 +88,7 @@
         // border:1px solid red;
         background-color: #ffff;
         border-radius: 0px 8px 8px 0px;
+        border-left: 5px solid #E8ECF1;
         .container_dashboard_details{
             // border: 1px solid;
             width: 299px;
