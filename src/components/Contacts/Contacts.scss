@@ -1,0 +1,82 @@
+.contacts
+{
+    background-color: white;
+    height: 605px;
+    width: 384px;
+    margin-top: 0px;
+    margin-left: 30px;
+    scrollbar-width: none; 
+    //overflow: scroll; 
+    border-radius: 8px;
+}
+
+.contactform
+{
+    height: 550px;
+    overflow: scroll;
+}
+
+.contact_heading{
+    margin-left: 30px;
+   margin-top: 29px;
+    .heading_parent{
+        color: #A1ACB8;
+        font-weight: 400;
+    }
+}
+.contact_details{
+    display: flex;
+    padding: 23px 24px;
+}
+
+.contactbutton_bottom
+{
+    display: flex;
+    float: right;
+    margin-right: -163px;
+    margin-top: 15px;
+    gap: 12px;
+    border-color: #D9DEE3;
+}
+.cancelbutton
+{
+    border: none;
+    width: 108px;
+    height: 29px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #697A8D;
+    font-size: 15px;
+    font-weight: bold;
+}
+.savebutton
+{
+    border: none;
+    width: 94px;
+    height: 29px;
+    border-radius: 4px;
+    color: white;
+    background-color: #19A873;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    opacity: 0.5;
+    font-size: 13px;
+    color:#697A8D;
+    font-weight: 500;
+ }
+
+.contactinput
+{
+    height: 38px;
+    width: 330px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border-color: #D9DEE3;
+}
+
+.contactinput:hover{
+    color:red;
+}

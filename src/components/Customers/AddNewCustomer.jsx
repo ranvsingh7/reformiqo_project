@@ -141,15 +141,7 @@ const option=[
                 <div className='form-left'>
 
                     <label className='label'>GST Treatment</label><br/>
-                    <Select  placeholder="Select value" options={option} />
-                    {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="" selected hidden >Select value</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                     <option value="4">4</option>
-                    </select> */}
+                    <DropdownWithProfile/>
                     <label className='label' style={{marginTop:"5px"}}>GST No.</label><br/>
                     <div className='customerdropdown' style={{marginTop:"5px"}}>
 
@@ -251,7 +243,7 @@ const option=[
                     </select> */}
                     <label className='label'>Ownership</label><br/>
                     <Select  placeholder="Select value" style={{height:"41px"}} options={option}/>
-                    <DropdownWithProfile/>
+                  
 
                     <div className='customerbutton_bottom'>
             <button type='button' className='cancelbutton'>Cancel</button>
@@ -263,7 +255,7 @@ const option=[
             </div>
             </div>
 
-            {/* <Footer/>  */}
+        
     </>
   )
 }
