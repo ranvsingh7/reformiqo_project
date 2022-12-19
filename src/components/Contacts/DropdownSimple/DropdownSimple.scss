@@ -1,33 +1,30 @@
-.drpprofile
+.drpsimple
 {
     .css-1fdsijx-ValueContainer
  {
     font-size: 13px;
     color: #697A8D;
     font-weight: 500;
-    //    padding :0px !important;
+    :focus
+    {
+        outline: #19A873;
+        border: 3px solid red;
+    }
+  
  }
+//  .css-1fdsijx-ValueContainer:focus {
+//    // outline: none;
+//     border:1px solid red;
+//     box-shadow: 0 0 10px #719ECE;
+//     width:500px
+// }
+
  .css-1u9des2-indicatorSeparator
  {
     width :0px !important;
  }
 
 
-.css-tj5bde-Svg{
-     /* display: inline-block; */
-     fill: currentColor;
-     /* line-height: 1; */
-     /* stroke: currentColor; */
-     stroke-width: 0px;
-    // width: 16px;
-     padding: 0px -23px -31px 23px;
-     /* margin-left: 57px; */
-     margin-right: -6.4px;
-    // color: #697A8D;
-     width: 21.5px;
-     height: 12.25px;
-     color: #8E9CAA;
-}
 .css-t3ipsp-control{
     -webkit-align-items:center;
     -webkit-box-align:center;
@@ -51,7 +48,7 @@
     -webkit-transition:all 100ms;
     transition:all 100ms;
     background-color:hsl(0, 0%, 100%);
-    border-color:#D9DEE3 !important;
+    border-color:#19A873 !important;
     border-radius:4px;
     border-style:solid;
     border-width:1px;
@@ -82,38 +79,11 @@ margin-bottom: 18px;
 }
 
 /*  Dropdown Styling */
-.drpName
+.contdetails
 {
 font-size:13px; 
-color:#566A7F; 
-margin-top:3px;
+color: #566A7F;
 }
-.drpEmail
-{
-font-size:10px;
-color:#8E9CAA;
-margin-bottom:6px;
-margin-top: 1px;
-}
-.drpContact
-{
-font-size:10px; 
-color:#8E9CAA; 
-margin-top:7px;
-margin-left: -9px;
-}
-.drpDate
-{
-    font-size:10px;
-    color:#FFFFFF;
-    margin-bottom:6px;
-    margin-top: 1px;
-    background-color: #C2CAD2;
-    padding: 4px;
-
-}
-
-
 .css-1nmdiq5-menu{
     border:none ;
     outline: none ;
@@ -157,24 +127,24 @@ margin-left: -9px;
         user-select:none;
        -webkit-tap-highlight-color:#E3F1EC ;
        background-color:#E3F1EC  ;
-        padding:5px 5px 7px 10px !important;
+        padding:10px 10px 10px 10px !important;
         box-sizing:border-box;
       //  color: #19A873;
        // margin-left: 20px;
         //margin-top: 12px;
         //font-weight: bold;
     }
-.css-d7l1ni-option .drpName{
-    color: #19A873 ;
-    //font-size: 13px;
-}
-.css-d7l1ni-option .drpDate{
-    color: #FFFFFF ;
-    background-color: #19A873;
-    padding: 4px;
-    width: 20px;
-    height: 20px;
-    font-size: 11px;
+// .css-d7l1ni-option .contdetails{
+//     color: #19A873 ;
+//     //font-size: 13px;
+// }
+.css-d7l1ni-option .contdetails{
+    color :#19A873 !important ;
+   // background-color: #19A873;
+     padding: 4px;
+    // width: 5px;
+    // height: 20px;
+    font-size: 13px;
 }
 
         .css-d7l1ni-option:active{
@@ -194,7 +164,7 @@ margin-left: -9px;
          //-webkit-tap-highlight-color:#E3F1EC ;
           // background-color:#E3F1EC  ;
           //  color:#E3F1EC ;
-          padding:5px 5px 7px 10px !important;
+          padding:10px 10px 10px 10px !important;
             box-sizing:border-box;
               width:330px !important;
             height: 41px !important;
@@ -206,9 +176,9 @@ margin-left: -9px;
 
         .css-10wo9uf-option:active{
             background-color:#E3F1EC !important;
-            // color: #19A873 !important;
+           //  color: #19A873 !important;
         }
-
+       
         .css-tr4s17-option{
             cursor:default;
             display:block;
@@ -219,7 +189,7 @@ margin-left: -9px;
             background-color:#E3F1EC !important;
             //color: #19A873 !important;
             color: #19A873 !important;
-            padding:5px 5px 7px 10px !important;
+            padding:10px 10px 10px 10px !important;
             box-sizing:border-box;
             width:330px !important;
             height: 41px !important;
@@ -233,23 +203,14 @@ margin-left: -9px;
     // }
 
         .css-tr4s17-option {
-            .drpName 
+            .contdetails 
             {
             color :#19A873 ;
+            font-size: 13px;
             }
-            .drpDate
-            {
-                color :#FFFFFF ;
-                background-color: #19A873;
-                width: 20px;
-                height: 20px;
-                padding: 4px;
-                font-size: 11px;
-            }
+           
         }
-        // .css-tr4s17-option .drpDate{
-        //     color :#19A873 ;
-        // }
+       
         .css-tr4s17-option:active{
             background-color:#E3F1EC !important;
            

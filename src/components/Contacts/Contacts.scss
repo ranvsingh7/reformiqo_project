@@ -1,118 +1,86 @@
-.drpprofile
+.contacts
 {
-    .css-1fdsijx-ValueContainer
- {
-    font-size: 13px;
-    color: #697A8D;
-    font-weight: 500;
-    //    padding :0px !important;
- }
- .css-1u9des2-indicatorSeparator
- {
-    width :0px !important;
- }
-
-
-.css-tj5bde-Svg{
-     /* display: inline-block; */
-     fill: currentColor;
-     /* line-height: 1; */
-     /* stroke: currentColor; */
-     stroke-width: 0px;
-    // width: 16px;
-     padding: 0px -23px -31px 23px;
-     /* margin-left: 57px; */
-     margin-right: -6.4px;
-    // color: #697A8D;
-     width: 21.5px;
-     height: 12.25px;
-     color: #8E9CAA;
-}
-.css-t3ipsp-control{
-    -webkit-align-items:center;
-    -webkit-box-align:center;
-    -ms-flex-align:center;
-    align-items:center;
-    cursor:default;
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-flex-wrap:wrap;
-    -webkit-flex-wrap:wrap;
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-between;
-    justify-content:space-between;
-    min-height:38px;
-    outline:0!important;
-    position:relative;
-    -webkit-transition:all 100ms;
-    transition:all 100ms;
-    background-color:hsl(0, 0%, 100%);
-    border-color:#D9DEE3 !important;
-    border-radius:4px;
-    border-style:solid;
-    border-width:1px;
-    box-shadow:0 0 0 0px #D9DEE3 !important;
-    box-sizing:border-box;
+    background-color: white;
+    height: 605px;
+    width: 384px;
+    margin-top: 0px;
+    margin-left: 30px;
+    scrollbar-width: none; 
+    //overflow: scroll; 
+    border-radius: 8px;
 }
 
-.css-13cymwt control:hover{
-border-color: #A1ACB8 !important;
-}
-
-.css-b62m3t-container
+.contactform
 {
-margin-top: 5px;
-height: 38px;
-width: 330px;
-margin-bottom: 18px;
+    height: 550px;
+    overflow: scroll;
 }
 
-.css-1jqq78o-placeholder {
-    grid-area: 1/1/2/3;
-    /* color: hsl(0, 0%, 50%); */
-    margin-left: 2px;
-    margin-right: 2px;
-    box-sizing: border-box;
-    color: #697A8D;
+.contact_heading{
+    margin-left: 30px;
+   margin-top: 29px;
+    .heading_parent{
+        color: #A1ACB8;
+        font-weight: 400;
+    }
+}
+.contact_details{
+    display: flex;
+    padding: 23px 24px;
+}
+
+.contactbutton_bottom
+{
+    display: flex;
+    float: right;
+    margin-right: -163px;
+    margin-top: 15px;
+    gap: 12px;
+    border-color: #D9DEE3;
+}
+.cancelbutton
+{
+    border: none;
+    width: 108px;
+    height: 29px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #697A8D;
+    font-size: 15px;
+    font-weight: bold;
+}
+.savebutton
+{
+    border: none;
+    width: 94px;
+    height: 29px;
+    border-radius: 4px;
+    color: white;
+    background-color: #19A873;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+::placeholder { /* Most modern browsers support this now. */
     opacity: 0.5;
+    font-size: 13px;
+    color:#697A8D;
+    font-weight: 500;
+ }
+
+.contactinput
+{
+    height: 38px;
+    width: 330px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border-color: #D9DEE3;
 }
 
-/*  Dropdown Styling */
-.drpName
+.contdetails
 {
-font-size:13px; 
-color:#566A7F; 
-margin-top:3px;
+    font-size: 13px;
 }
-.drpEmail
-{
-font-size:10px;
-color:#8E9CAA;
-margin-bottom:6px;
-margin-top: 1px;
-}
-.drpContact
-{
-font-size:10px; 
-color:#8E9CAA; 
-margin-top:7px;
-margin-left: -9px;
-}
-.drpDate
-{
-    font-size:10px;
-    color:#FFFFFF;
-    margin-bottom:6px;
-    margin-top: 1px;
-    background-color: #C2CAD2;
-    padding: 4px;
-
-}
-
 
 .css-1nmdiq5-menu{
     border:none ;
@@ -146,6 +114,21 @@ margin-left: -9px;
     width: 0px;
 }
 
+// .css-1it2zn2-MenuList {
+//     /* max-height: 151.20000076293945px; */
+//     overflow: scroll !important;
+//     //position: none !important;
+//     -webkit-overflow-scrolling: touch;
+//     padding-bottom: 4px;
+//     padding-top: 4px;
+//     box-sizing: border-box;
+//   //  margin-left: -20px;
+// }
+// .css-1it2zn2-MenuList::-webkit-scrollbar
+// {
+//     width: 0px;
+// }
+
     .css-d7l1ni-option{
         cursor:default;
         display:block;
@@ -156,10 +139,10 @@ margin-left: -9px;
         -ms-user-select:none;
         user-select:none;
        -webkit-tap-highlight-color:#E3F1EC ;
-       background-color:#E3F1EC  ;
-        padding:5px 5px 7px 10px !important;
+       background-color:#E3F1EC !important ;
+       padding:50px 50px 70px 100px ;
         box-sizing:border-box;
-      //  color: #19A873;
+        color: #19A873 !important;
        // margin-left: 20px;
         //margin-top: 12px;
         //font-weight: bold;
@@ -169,12 +152,7 @@ margin-left: -9px;
     //font-size: 13px;
 }
 .css-d7l1ni-option .drpDate{
-    color: #FFFFFF ;
-    background-color: #19A873;
-    padding: 4px;
-    width: 20px;
-    height: 20px;
-    font-size: 11px;
+    color: #19A873 ;
 }
 
         .css-d7l1ni-option:active{
@@ -191,10 +169,10 @@ margin-left: -9px;
             -moz-user-select:none;
             -ms-user-select:none;
             user-select:none;
-         //-webkit-tap-highlight-color:#E3F1EC ;
-          // background-color:#E3F1EC  ;
-          //  color:#E3F1EC ;
-          padding:5px 5px 7px 10px !important;
+         -webkit-tap-highlight-color:#E3F1EC !important;
+           background-color:#E3F1EC  ;
+            color:#E3F1EC ;
+            padding:5px 5px 7px 10px !important;
             box-sizing:border-box;
               width:330px !important;
             height: 41px !important;
@@ -223,7 +201,7 @@ margin-left: -9px;
             box-sizing:border-box;
             width:330px !important;
             height: 41px !important;
-            
+         
           
             //overflow: scroll !important;
           
@@ -233,18 +211,10 @@ margin-left: -9px;
     // }
 
         .css-tr4s17-option {
-            .drpName 
+            .contdetails 
             {
             color :#19A873 ;
-            }
-            .drpDate
-            {
-                color :#FFFFFF ;
-                background-color: #19A873;
-                width: 20px;
-                height: 20px;
-                padding: 4px;
-                font-size: 11px;
+           // font-size: 13px !important;
             }
         }
         // .css-tr4s17-option .drpDate{
@@ -255,4 +225,4 @@ margin-left: -9px;
            
         }
 
-    }
+
