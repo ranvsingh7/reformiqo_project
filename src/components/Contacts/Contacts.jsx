@@ -2,9 +2,38 @@ import React from 'react'
 import Page_heading from '../Page_Heading/Page_heading';
 import logo from "../Customers/images/Email.svg";
 import "./Contacts.scss";
-import DropdownWithProfile from '../DropdownWithProfile/DropdownWithProfile';
+import DropdownSimple from './DropdownSimple/DropdownSimple';
+// import Select from "react-select";
 
 function Contacts() {
+
+    // const option = [
+    //     {
+    //       value: "Owner",
+    //       label:(<div className='contdetails' >Owner</div>),
+    //     },
+    //     {
+    //       value: "Accountant",
+    //       label: (<div className='contdetails'>Accountant</div>),
+    //     },
+    //     {
+    //       value: "Sales Person",
+    //       label: (<div className='contdetails' >Sales Person</div>),
+    //     },
+    //     {
+    //       value: "Key Person",
+    //       label: (<div className='contdetails'>Key Person</div>),
+    //     },
+    //     {
+    //       value: "Technician",
+    //       label: (<div className='contdetails'>Technician</div>),
+    //     },
+    //     {
+    //         value: "Manager",
+    //         label: (<div className='contdetails'>Manager</div>),
+    //       },
+    //   ];
+
   return (
   <>
    <div className='contact_heading'>
@@ -37,18 +66,10 @@ function Contacts() {
                     </div>
                 
                     <label className='leadlabel' style={{marginTop:"15px"}}>Type</label><br/>
-                    <select className='contactinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none", border:"1px solid #697A8D", opacity:0.5}} placeholder='select value' name="values" id="values" >
-                    <option value="" selected hidden>Select value</option>
-                    <option value="1">Owner</option>
-                    <option value="2">Accountant</option>
-                    <option value="3">Sales Person</option>
-                    <option value="4">Key Person</option>
-                    <option value="5">Technician</option>
-                    <option value="6">Manger</option>
-                    </select>
+                    <DropdownSimple/>
 
                     <label className='leadlabel'>Lead Source</label><br/>
-                    <DropdownWithProfile/>
+                    <DropdownSimple/>
 
                     <label className='leadlabel' style={{marginTop:"5px"}}>Date of Birth</label><br/>
                     <div className='leadinput' style={{marginTop:"5px"}}>

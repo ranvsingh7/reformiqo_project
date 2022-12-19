@@ -1,87 +1,89 @@
-.contacts
+.drpsimple
 {
-    background-color: white;
-    height: 605px;
-    width: 384px;
-    margin-top: 0px;
-    margin-left: 30px;
-    scrollbar-width: none; 
-    //overflow: scroll; 
-    border-radius: 8px;
-}
-
-.contactform
-{
-    height: 550px;
-    overflow: scroll;
-}
-
-.contact_heading{
-    margin-left: 30px;
-   margin-top: 29px;
-    .heading_parent{
-        color: #A1ACB8;
-        font-weight: 400;
-    }
-}
-.contact_details{
-    display: flex;
-    padding: 23px 24px;
-}
-
-.contactbutton_bottom
-{
-    display: flex;
-    float: right;
-    margin-right: -163px;
-    margin-top: 15px;
-    gap: 12px;
-    border-color: #D9DEE3;
-}
-.cancelbutton
-{
-    border: none;
-    width: 108px;
-    height: 29px;
-    border-radius: 4px;
-    color: #FFFFFF;
-    background-color: #697A8D;
-    font-size: 15px;
-    font-weight: bold;
-}
-.savebutton
-{
-    border: none;
-    width: 94px;
-    height: 29px;
-    border-radius: 4px;
-    color: white;
-    background-color: #19A873;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-::placeholder { /* Most modern browsers support this now. */
-    opacity: 0.5;
+    .css-1fdsijx-ValueContainer
+ {
     font-size: 13px;
-    color:#697A8D;
+    color: #697A8D;
     font-weight: 500;
+    :focus
+    {
+        outline: #19A873;
+        border: 3px solid red;
+    }
+  
+ }
+//  .css-1fdsijx-ValueContainer:focus {
+//    // outline: none;
+//     border:1px solid red;
+//     box-shadow: 0 0 10px #719ECE;
+//     width:500px
+// }
+
+ .css-1u9des2-indicatorSeparator
+ {
+    width :0px !important;
  }
 
-.contactinput
-{
-    height: 38px;
-    width: 330px;
-    border-radius: 5px;
-    margin-top: 5px;
-    border-color: #D9DEE3;
+
+.css-t3ipsp-control{
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    cursor:default;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-flex-wrap:wrap;
+    -webkit-flex-wrap:wrap;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    justify-content:space-between;
+    min-height:38px;
+    outline:0!important;
+    position:relative;
+    -webkit-transition:all 100ms;
+    transition:all 100ms;
+    background-color:hsl(0, 0%, 100%);
+    border-color:#19A873 !important;
+    border-radius:4px;
+    border-style:solid;
+    border-width:1px;
+    box-shadow:0 0 0 0px #D9DEE3 !important;
+    box-sizing:border-box;
 }
 
+.css-13cymwt control:hover{
+border-color: #A1ACB8 !important;
+}
+
+.css-b62m3t-container
+{
+margin-top: 5px;
+height: 38px;
+width: 330px;
+margin-bottom: 18px;
+}
+
+.css-1jqq78o-placeholder {
+    grid-area: 1/1/2/3;
+    /* color: hsl(0, 0%, 50%); */
+    margin-left: 2px;
+    margin-right: 2px;
+    box-sizing: border-box;
+    color: #697A8D;
+    opacity: 0.5;
+}
+
+/*  Dropdown Styling */
 .contdetails
 {
-    font-size: 13px;
+font-size:13px; 
+color: #566A7F;
 }
-
 .css-1nmdiq5-menu{
     border:none ;
     outline: none ;
@@ -114,21 +116,6 @@
     width: 0px;
 }
 
-// .css-1it2zn2-MenuList {
-//     /* max-height: 151.20000076293945px; */
-//     overflow: scroll !important;
-//     //position: none !important;
-//     -webkit-overflow-scrolling: touch;
-//     padding-bottom: 4px;
-//     padding-top: 4px;
-//     box-sizing: border-box;
-//   //  margin-left: -20px;
-// }
-// .css-1it2zn2-MenuList::-webkit-scrollbar
-// {
-//     width: 0px;
-// }
-
     .css-d7l1ni-option{
         cursor:default;
         display:block;
@@ -139,20 +126,25 @@
         -ms-user-select:none;
         user-select:none;
        -webkit-tap-highlight-color:#E3F1EC ;
-       background-color:#E3F1EC !important ;
-       padding:50px 50px 70px 100px ;
+       background-color:#E3F1EC  ;
+        padding:10px 10px 10px 10px !important;
         box-sizing:border-box;
-        color: #19A873 !important;
+      //  color: #19A873;
        // margin-left: 20px;
         //margin-top: 12px;
         //font-weight: bold;
     }
-.css-d7l1ni-option .drpName{
-    color: #19A873 ;
-    //font-size: 13px;
-}
-.css-d7l1ni-option .drpDate{
-    color: #19A873 ;
+// .css-d7l1ni-option .contdetails{
+//     color: #19A873 ;
+//     //font-size: 13px;
+// }
+.css-d7l1ni-option .contdetails{
+    color :#19A873 !important ;
+   // background-color: #19A873;
+     padding: 4px;
+    // width: 5px;
+    // height: 20px;
+    font-size: 13px;
 }
 
         .css-d7l1ni-option:active{
@@ -169,10 +161,10 @@
             -moz-user-select:none;
             -ms-user-select:none;
             user-select:none;
-         -webkit-tap-highlight-color:#E3F1EC !important;
-           background-color:#E3F1EC  ;
-            color:#E3F1EC ;
-            padding:5px 5px 7px 10px !important;
+         //-webkit-tap-highlight-color:#E3F1EC ;
+          // background-color:#E3F1EC  ;
+          //  color:#E3F1EC ;
+          padding:10px 10px 10px 10px !important;
             box-sizing:border-box;
               width:330px !important;
             height: 41px !important;
@@ -184,9 +176,9 @@
 
         .css-10wo9uf-option:active{
             background-color:#E3F1EC !important;
-            // color: #19A873 !important;
+           //  color: #19A873 !important;
         }
-
+       
         .css-tr4s17-option{
             cursor:default;
             display:block;
@@ -197,11 +189,11 @@
             background-color:#E3F1EC !important;
             //color: #19A873 !important;
             color: #19A873 !important;
-            padding:5px 5px 7px 10px !important;
+            padding:10px 10px 10px 10px !important;
             box-sizing:border-box;
             width:330px !important;
             height: 41px !important;
-         
+            
           
             //overflow: scroll !important;
           
@@ -214,15 +206,14 @@
             .contdetails 
             {
             color :#19A873 ;
-           // font-size: 13px !important;
+            font-size: 13px;
             }
+           
         }
-        // .css-tr4s17-option .drpDate{
-        //     color :#19A873 ;
-        // }
+       
         .css-tr4s17-option:active{
             background-color:#E3F1EC !important;
            
         }
 
-
+    }

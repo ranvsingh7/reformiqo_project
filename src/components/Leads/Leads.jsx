@@ -1,8 +1,9 @@
 import React from 'react'
-import DropdownWithProfile from '../DropdownWithProfile/DropdownWithProfile';
 import Page_heading from '../Page_Heading/Page_heading'
 import "./Leads.scss";
 import logo from "../Customers/images/Email.svg";
+import DropdownAddButton from './DropdownAddButton/DropdownAddButton';
+// import { RadioGroup, RadioButton } from 'react-radio-buttons';
 
 function Leads() {
   return (
@@ -41,24 +42,19 @@ function Leads() {
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
                     </div>
 
-                    <label className='leadlabel'>Lead Source Type</label><br/>
-                    <div style={{display:"flex", marginTop:"5px", marginBottom:"18px"}}>
-
-                      <div>
-                    <label class="container">Contact
-                    <input type="radio" checked="checked" name="radio"/>
-                    <span class="checkmark"></span>
-                    </label>
-                    </div>
-
-                    <div style={{marginLeft:"18px"}}>
-                    <label class="container">Others
-                    <input type="radio" name="radio"/>
-                    <span class="checkmark"></span>
-                    </label>
-                    </div>
                     
-                    </div>
+                    <label className='leadlabel'>Lead Source Type</label><br/>
+                    <div className='radio-group'>
+                    <label className='radio'>
+                        <input type="radio" value="male" name="lead"/>Contacts
+                         <span></span> 
+                    </label>
+                    <label className='radio'>
+                        <input type="radio" value="female" name="lead"/>Others
+                        <span></span>
+                    </label>
+                    </div> 
+                  
 
 
 
@@ -74,9 +70,9 @@ function Leads() {
                     </div> */}
 
                     <label className='leadlabel' style={{marginTop:"15px"}}>Contacts</label><br/>
-                    <DropdownWithProfile/>
+                    <DropdownAddButton/>
                     <label className='leadlabel'>Ownership</label><br/>
-                    <DropdownWithProfile/>
+                    <DropdownAddButton/>
         </div>
     </div> 
     </div>
