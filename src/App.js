@@ -9,6 +9,7 @@ import {Routes ,Route } from 'react-router-dom'
 import Page_heading from './components/Page_Heading/Page_heading';
 import Dashboard from './components/Dashboard/Dashboard';
 import AddNewCustomer from './components/Customers/AddNewCustomer';
+import CustomerPage from './components/Customer-Page/CustomerPage';
 
 function App() {
   return (
@@ -19,16 +20,17 @@ function App() {
           <div className='main'>
           <Sidebar/>
           <div className='rightScreen'>
-          <SearchBar />
+          {/* <SearchBar /> */}
           
 
           <Routes>
           <Route path='/' element={<Dashboard/>} />
-            <Route path='customers' element={<Customers/>} />
+            {/* <Route path='customers' element={<Customers />} /> */}
+            <Route path='customers' element={<CustomerPage/>} />
             <Route path='addcustomers' element={<AddNewCustomer/>} />
             <Route path='/' element={<Dashboard/>} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
           </div>
           </div>
           

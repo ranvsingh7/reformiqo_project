@@ -6,6 +6,7 @@
     height: 580px;
     margin-top: 30px;
     overflow: scroll;
+    position: relative;
 
     ::-webkit-scrollbar{
         width: 0;
@@ -30,6 +31,10 @@
     align-items: center;
     margin-bottom: 30px;
     max-width: 1320px;
+    // position: fixed;
+    // position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     
 
     justify-content: space-between;
@@ -106,16 +111,11 @@
             border: none;
             width: auto;
             padding: 0px 13px;
-            justify-content: center;
+            // justify-content: center;
             display: flex;
             align-items: center;
             .addNewBtn_text{
                 min-width: 90px;
-            }
-
-            .add_symbol{
-                font-size: 18px;
-                margin-top: -4px;
             }
         }
     }
@@ -327,4 +327,18 @@ th{.ant-checkbox-checked{
     animation-fill-mode: backwards;
     content: "";
     transition: all 0.3s;
+}
+
+
+
+// pagination none
+
+.ant-pagination{
+    display: none !important;
+}
+
+// table column saprator
+
+:not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    display: none !important;
 }

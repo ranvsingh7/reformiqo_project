@@ -52,6 +52,9 @@
   position: absolute;
   z-index: 99999;
   top: 30;
+  margin-top: 10px;
+  right: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .calendarWrap {
@@ -64,7 +67,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 8px;
   background-color: #ffff;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   display: flex;
   align-items: center;
 
