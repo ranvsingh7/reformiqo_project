@@ -23,8 +23,6 @@ function AddNewCustomer(props) {
     fetch(
       `https://commonapi.mastersindia.co/commonapis/searchgstin?gstin=${gstinparams}`,
       {
-        mode:"cors",
-        "Access-Control-Allow-Origin": "*",
         headers: {
           Authorization: "Bearer 0ab31ef7392227173c6e8d34195e86d5eb0da1e9",
           client_id: "JarZChUcsytSBbnkpt",
@@ -185,6 +183,8 @@ function AddNewCustomer(props) {
               <label className="label">Type Category</label>
               <br />
               <Select placeholder="Select value" options={option} />
+
+             
               {/* <select  className='customerinput' style={{marginBottom:"18px",  color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
                     <option value="" selected hidden>Select value</option>

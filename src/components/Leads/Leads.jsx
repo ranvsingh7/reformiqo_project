@@ -46,7 +46,7 @@ function Leads() {
                     <label className='leadlabel'>Lead Source Type</label><br/>
                     <div className='radio-group'>
                     <label className='radio'>
-                        <input type="radio" value="male" name="lead"/>Contacts
+                        <input type="radio" value="male" name="lead" checked/>Contacts
                          <span></span> 
                     </label>
                     <label className='radio'>
