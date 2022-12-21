@@ -381,7 +381,8 @@ const CustomerPage = () => {
 
       <div className="table-customer-details">
         <div className="customer-table">
-          <Table
+        <div className="table-width">
+        <Table
             ref={componentRef}
             rowSelection={{
               type: "checkbox",
@@ -394,12 +395,13 @@ const CustomerPage = () => {
             }}
             dataSource={dataSource}
             columns={columns}
-            scroll={{ y: 500, x: 756 }}
-            style={{ maxWidth: 1600 }}
+            scroll={{ y: 800, x: 720 }}
+            // style={{ maxWidth: 2 }}
             rowClassName={(record) =>
               record.key % 2 === 0 ? "highlight_row" : ""
             }
           />
+        </div>
         </div>
         <div className="customer-details">
           <div className="customer-name-profile">
@@ -472,7 +474,6 @@ const CustomerPage = () => {
               <h2>Kushal Nahata</h2>
             </div>
 
-            {/* div.customer-address */}
           </div>
         </div>
       </div>

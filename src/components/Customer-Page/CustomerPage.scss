@@ -6,10 +6,12 @@
 
     margin: auto;
     width: 95%;
-    max-width: 1300px;
+    max-width: 2200px;
     min-width: 1150px;
-    height: 700px;
-    margin-top: 30px;
+    // height: 680px;
+    height: 100vh;
+    // padding-bottom: 20px;
+    // margin-top: 30px;
     overflow: scroll;
 
     ::-webkit-scrollbar{
@@ -17,8 +19,8 @@
     }
     
     .tableData{
-        height: 495px;
-        max-width: 1320px;
+        // height: 495px;
+        max-width: 2220px;
         // min-width: 100%;
         // border: 1px solid;
         // overflow: scroll;
@@ -43,7 +45,8 @@
     background-color: #ffff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 8PX;
-    justify-content: space-between;
+    justify-content: space-around;
+    // justify-content: left;
 
 
     .left-border{
@@ -206,21 +209,30 @@
 // customer table and customer details 
 
 .customers-page{
-
+    
     .table-customer-details{
+        padding-bottom: 30px;
         display: flex;
+        // flex-direction: column;
         gap: 30px;
         justify-content: space-between;
-        border: 1px solid;
+        // border: 1px solid;
+        max-width: 2200px;
 
         .customer-table{
-            width: 768px;
-            border: 1px solid;
+            // width: 800px;
+            // max-width: 1200px;
+            // border: 1px solid;
+
+
+            .table-width{
+                width: 99%;
+            }
         }
 
         .customer-details{
             width: 354px;
-            border: 1px solid;
+            // border: 1px solid;
             background-color: #ffff;
             box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 8px;

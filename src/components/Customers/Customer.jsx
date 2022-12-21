@@ -305,8 +305,8 @@ const Customer = () => {
           }}
           dataSource={dataSource}
           columns={columns}
-          scroll={{ y: 400, x: 1120 }}
-          style={{ maxWidth: 1600 }}
+          scroll={{ y: 800, x: 1120 }}
+          style={{ maxWidth: 2200 }}
           rowClassName={(record) =>
             record.key % 2 === 0 ? "highlight_row" : ""
           }

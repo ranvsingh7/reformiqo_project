@@ -7,7 +7,7 @@
     // width: 1122px;
     width: 95%;
     min-width: 300px;
-    max-width: 1600px !important;
+    max-width: 2200px !important;
 
     margin: auto;
     margin-top: 30px;
@@ -23,9 +23,11 @@
     overflow: wrap;
 
     .dashboard_container{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
         // border: 1px solid;
-        max-width: 1300px;
+        max-width: 2200px;
         justify-content: space-around;
         background-color: #ffff;
         border-radius: 8px;
