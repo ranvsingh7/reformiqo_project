@@ -31,6 +31,30 @@
         margin-top: 37px;
     }
 }
+
+// @media screen and (max-width: 600px) {
+//     .customer-dashboard{
+//         // border: 1px solid;
+//         width: 100%;
+//         display: block;
+//         background-color: #ffff;
+//         margin-bottom: 10px;
+//     }
+//   }
+
+@media screen and (width:600px) {
+    .customers-page{
+        margin: auto;
+        width: 95%;
+     //   max-width: 1300px;
+        min-width: 600px;
+    //    height: 700px;
+        margin-top: 30px;
+        overflow: scroll;
+    }
+
+    
+}
 .customers-page::-webkit-scrollbar{
     display: none;
 }
@@ -53,6 +77,19 @@
         border-left: 5px solid #E8ECF1;
     }
 
+    @media screen and (width: 50px) {
+        .customer-dashboard{
+            // border: 1px solid;
+            width: -700px;
+            display: flex;
+            background-color: #ffff;
+            margin-bottom: 10px;
+            .left-border{
+                border-left: 5px solid #E8ECF1;
+            }
+        
+        }
+      }
 
     .customer-dashboard-card{
         // border: 1px solid;
@@ -206,6 +243,22 @@
 }
 
 
+@media only screen and (min-width:500px) {
+.customers-page{
+    .table-customer-details{
+        display: flex;
+        gap: 30px;
+     justify-content: space-between;
+        border: 1px solid;
+        .customer-table{
+            width: 768px;
+            border: 1px solid;
+           // max-width: 50% ;
+        }
+    }
+}
+}
+
 // customer table and customer details 
 
 .customers-page{
@@ -254,9 +307,9 @@
                     justify-content: center;
                     align-items: center;
 
-                    img{
+                    // img{
 
-                    }
+                    // }
                 }
             
                 .name-container{

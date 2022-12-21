@@ -157,17 +157,17 @@ margin-left: -9px;
         user-select:none;
        -webkit-tap-highlight-color:#E3F1EC ;
        background-color:#E3F1EC  ;
-        padding:5px 5px 7px 10px !important;
+        padding:0px 4px 4.5px 10px !important;
         box-sizing:border-box;
       //  color: #19A873;
        // margin-left: 20px;
         //margin-top: 12px;
         //font-weight: bold;
     }
-.css-d7l1ni-option .drpName{
-    color: #19A873 ;
-    //font-size: 13px;
-}
+// .css-d7l1ni-option .drpName{
+//    // color: #19A873 ;
+//     //font-size: 13px;
+// }
 .css-d7l1ni-option .drpDate{
     color: #FFFFFF ;
     background-color: #19A873;
@@ -186,27 +186,22 @@ margin-left: -9px;
             cursor:default;
             display:block;
             font-size:inherit;
+            margin: opx !important;
             width:100%;
             -webkit-user-select:none;
             -moz-user-select:none;
             -ms-user-select:none;
             user-select:none;
-         //-webkit-tap-highlight-color:#E3F1EC ;
-          // background-color:#E3F1EC  ;
-          //  color:#E3F1EC ;
-          padding:5px 5px 7px 10px !important;
+          padding:0px 5px 10px 10px !important;
             box-sizing:border-box;
               width:330px !important;
             height: 41px !important;
-        //    margin-top: 10px;
-            
         }
 
 
 
         .css-10wo9uf-option:active{
             background-color:#E3F1EC !important;
-            // color: #19A873 !important;
         }
 
         .css-tr4s17-option{
@@ -214,12 +209,10 @@ margin-left: -9px;
             display:block;
             font-size:inherit;
             width:100%;
-           
-           // -webkit-tap-highlight-color:#E3F1EC !important ;
             background-color:#E3F1EC !important;
             //color: #19A873 !important;
             color: #19A873 !important;
-            padding:5px 5px 7px 10px !important;
+            padding:0px 5px 10px 10px !important;
             box-sizing:border-box;
             width:330px !important;
             height: 41px !important;
