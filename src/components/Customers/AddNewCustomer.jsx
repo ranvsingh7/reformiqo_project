@@ -5,7 +5,7 @@ import "./AddNewCustomer.scss";
 import logo from "./images/Email.svg";
 import Select from "react-select";
 import DropdownWithProfile from "../DropdownWithProfile/DropdownWithProfile";
-import axios from "axios";
+// import axios from "axios";
 
 const initialFieldValues = {
   lgnm: "",
@@ -21,7 +21,7 @@ function AddNewCustomer(props) {
 
 
   const getData = () => {
-    axios.get(
+    fetch (
       `https://commonapi.mastersindia.co/commonapis/searchgstin?gstin=${gstinparams}`,
       {
         headers: {

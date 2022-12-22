@@ -35,7 +35,7 @@ const Page_heading = ({ parent, child }) => {
           <div className="notification_count">4</div>
         </div>
 
-        <img src="./images/searchbar_icons/User - Avtar.svg" alt="" />
+        <img src="./images/searchbar_icons/User-Avtar.svg" alt="user" />
       </div>
     </div>
   </>
