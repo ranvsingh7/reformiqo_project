@@ -80,7 +80,7 @@ function DropdownWithProfile() {
       
   return (
     <div className='drpprofile'>
-        <Select  placeholder="Select value" options={option}/>
+        <Select  placeholder="Select value"  options={option}/>
     </div>
   )
 }

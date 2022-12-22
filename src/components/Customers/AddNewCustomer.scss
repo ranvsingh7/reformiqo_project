@@ -1,8 +1,8 @@
 .newcustomer
 {
     background-color: white;
-    height: 750px;
-    width: 750px;
+    height: 619px;
+    width: 1090px;
     margin-top: 0px;
     margin-left: 30px;
     scrollbar-width: none; 
@@ -10,9 +10,20 @@
     border-radius: 8px;
 }
 
+
+.customerbutton_bottom
+{
+    display: flex;
+   float: none !important;
+   // margin-right: 32px;
+    margin-top: 25px !important;
+    gap: 24px;
+   // border-color: #D9DEE3;
+   margin-top: 40px;
+}
 .customerform
 {
-    height: 550px;
+    height: 700px;
     overflow: scroll;
 }
 .customerform::-webkit-scrollbar{
@@ -24,17 +35,24 @@
 }
 .form-left
 {
-    width: 50%;
+    width: 32%;
     height:715px;
 }
+.form-center
+{
+    width: 30%;
+    height: 715px;
+    margin-left: 25px;
+}
+
 .form-right
 {
-    width: 50%;
+    width: 30%;
     height: 715px;
-    margin-left: 40px;
+    margin-left: 45px;
 }
 .box_heading1{
-    padding-top: 14px;
+    padding-top: 20px;
     align-items: center;
     margin-top: 0px;
     display: flex;
@@ -86,6 +104,26 @@
     display: flex;
     margin-bottom: 18px;
     border-color: #D9DEE3;
+}
+.customerstreet
+{
+    border:1px solid;
+    height: 38px;
+    width: 330px;
+    border-radius: 5px;
+    margin-top: 4px;
+    display: flex;
+    margin-bottom: 18px;
+    border-color: #D9DEE3;
+}
+
+.customerstreet::placeholder{
+    opacity: 0.5;
+    font-size: 13px;
+    color:#697A8D;
+    font-weight: 500;
+   margin-right: 20px;
+   margin-left: 20px;
 }
 
 .customeraddress
@@ -157,6 +195,13 @@ width:16px;
  height:13px;
   padding:12px;
 }
+.customerstimg
+{
+    width:16px;
+ height:13px;
+  //padding:12px;
+}
+
 ::placeholder { /* Most modern browsers support this now. */
     opacity: 0.5;
     font-size: 13px;
@@ -313,22 +358,6 @@ margin-left: -9px;
 {
     width: 0px;
 }
-
-// .css-1it2zn2-MenuList {
-//     /* max-height: 151.20000076293945px; */
-//     overflow: scroll !important;
-//     //position: none !important;
-//     -webkit-overflow-scrolling: touch;
-//     padding-bottom: 4px;
-//     padding-top: 4px;
-//     box-sizing: border-box;
-//   //  margin-left: -20px;
-// }
-// .css-1it2zn2-MenuList::-webkit-scrollbar
-// {
-//     width: 0px;
-// }
-
     .css-d7l1ni-option{
         cursor:default;
         display:block;
@@ -343,14 +372,8 @@ margin-left: -9px;
        padding:5.05px 5.3px 0px 10px !important;
         box-sizing:border-box;
         color: #19A873 !important;
-       // margin-left: 20px;
-        //margin-top: 12px;
-        //font-weight: bold;
     }
-// .css-d7l1ni-option .drpName{
-//  //   color: #19A873 ;
-//     //font-size: 13px;
-// }
+
 .css-d7l1ni-option .drpDate{
     color: #19A873 ;
 }
@@ -375,16 +398,13 @@ margin-left: -9px;
          padding:0px 7px 5.5px 14px !important;
             box-sizing:border-box;
               width:330px !important;
-            height: 41px !important;
-        //    margin-top: 10px;
-            
+            height: 41px !important;  
         }
 
 
 
         .css-10wo9uf-option:active{
             background-color:#E3F1EC !important;
-            // color: #19A873 !important;
         }
 
         .css-tr4s17-option{

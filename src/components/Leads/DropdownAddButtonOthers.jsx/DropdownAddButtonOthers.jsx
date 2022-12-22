@@ -1,34 +1,34 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Select from "react-select";
-import "./DropdownAddButton.scss";
+import "./DropdownAddButtonOthers.scss";
 
-function DropdownAddButton() {
+function DropdownAddButtonOthers() {
 
-    const handlecheck = () =>
-    {
-      alert("Click for add");
-    }
+    // const handlecheck = () =>
+    // {
+    //   alert("Click for add");
+    // }
     const option = [
         {
           value: "Owner",
-          label:(<div className='contdetails' >Aman Jaria</div>),
+          label:(<div className='contdetails' >ITME 2022</div>),
         },
         {
           value: "Accountant",
-          label: (<div className='contdetails'>Ashish Jaria</div>),
+          label: (<div className='contdetails'>IT Sol 2019</div>),
         },
         {
           value: "Sales Person",
-          label: (<div className='contdetails' >Parth Goswami</div>),
+          label: (<div className='contdetails' >ITME 2018</div>),
         },
         {
           value: "Key Person",
-          label: (<div className='contdetails'>Suryansh Jaria</div>),
+          label: (<div className='contdetails'>Colortax</div>),
         },
         {
           value: "Technician",
-          label: (<div className='contdetails'>Kushal Nahata</div>),
+          label: (<div className='contdetails'>The Cloth 2K19</div>),
         },
         {
             value: "Manager",
@@ -44,4 +44,4 @@ function DropdownAddButton() {
   )
 }
 
-export default DropdownAddButton
+export default DropdownAddButtonOthers
