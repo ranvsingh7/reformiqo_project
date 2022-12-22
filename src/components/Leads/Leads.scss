@@ -1,8 +1,8 @@
 .leads
 {
     background-color: white;
-    height: 662px;
-    width: 384px;
+    height: 475px;
+    width: 730px;
     margin-top: 0px;
     margin-left: 30px;
     scrollbar-width: none; 
@@ -10,10 +10,19 @@
     border-radius: 8px;
 }
 
+.leadform-right
+{
+    width: 50%;
+    height: 715px;
+    margin-left: 30px;
+}
 .leadform
 {
-    height: 550px;
+    height: 700px;
     overflow: scroll;
+}
+.contactform::-webkit-scrollbar{
+  width: 0;
 }
 
 .lead_heading{
@@ -48,7 +57,41 @@
 }
 
 
-
+.leadbutton_bottom
+{
+    display: flex;
+   // float: right;
+   // margin-right: 32px;
+   // margin-top: 109px;
+    gap: 24px;
+   // border-color: #D9DEE3;
+   margin-top: 40px;
+}
+.leadcancelbutton
+{
+  border: 1px  solid #C2CAD2;
+   // border: none;
+    width: 79px;
+    height: 38px;
+    border-radius: 6px;
+    color: #8E9CAA;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    
+    //font-weight: semibold;
+}
+.leadsavebutton
+{
+    border: none;
+    width: 67px;
+    height: 38px;
+    border-radius: 6px;
+    color: white;
+    background-color: #19A873;
+    font-size: 12px;
+   // margin-right: 24px;
+   // font-weight: bold;
+}
 
 
 /* Radio button  */
@@ -121,7 +164,7 @@
 .radio-group
 {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   margin-top: 8px;
 }
 

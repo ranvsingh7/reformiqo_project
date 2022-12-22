@@ -5,6 +5,7 @@ import "./AddNewCustomer.scss";
 import logo from "./images/Email.svg";
 import Select from "react-select";
 import DropdownWithProfile from "../DropdownWithProfile/DropdownWithProfile";
+import axios from "axios";
 
 const initialFieldValues = {
   lgnm: "",
@@ -20,7 +21,7 @@ function AddNewCustomer(props) {
 
 
   const getData = () => {
-    fetch(
+    axios.get(
       `https://commonapi.mastersindia.co/commonapis/searchgstin?gstin=${gstinparams}`,
       {
         headers: {
@@ -232,7 +233,7 @@ function AddNewCustomer(props) {
                     <option value="4">4</option>
                   </select>
                 </div>
-                <div style={{ width: "50%" }}>
+                <div style={{ width: "50%"}}>
                   <label className="label">Payment</label>
                   <br />
 
@@ -257,7 +258,20 @@ function AddNewCustomer(props) {
                   </select>
                 </div>
               </div>
-              <label className="label" style={{ marginTop: "5px" }}>
+              
+              <div className="customerbutton_bottom">
+                <button type="button" className="leadsavebutton">
+                  Save
+                </button>
+                <button type="button" className="leadcancelbutton">
+                Cancel
+                </button>
+                </div>
+            </div>
+
+            <div className="form-center">
+
+            <label className="label" style={{ marginTop: "5px" }}>
                 Credit Limit
               </label>
               <br />
@@ -269,9 +283,7 @@ function AddNewCustomer(props) {
                   placeholder="Placeholder"
                 />
               </div>
-            </div>
 
-            <div className="form-right">
               <label className="label" style={{ marginTop: "5px" }}>
                 Email
               </label>
@@ -297,36 +309,54 @@ function AddNewCustomer(props) {
                 />
               </div>
               <label className="label" style={{ marginTop: "5px" }}>
+                Street 1
+              </label>
+              <br />
+              <div className="customerstreet">
+                <img src={logo} className="customerimg" />
+                <input
+                  type="text"
+                  style={{ border: "none", outline: "none" }}
+                  placeholder="Placeholder"
+                />
+              </div>
+
+              <label className="label" style={{ marginTop: "5px" }}>
+                Street 2
+              </label>
+              <br />
+              <div className="customerstreet">
+                 <img src={logo} className="customerimg" />
+                <input
+                  type="text"
+                  style={{ border: "none", outline: "none" }}
+                  placeholder="Placeholder"
+                />
+              </div>
+              <label className="label">Default Place of Supply</label>
+              <br />
+              <Select placeholder="Select value" options={option} />
+              {/* <label className="label" style={{ marginTop: "5px" }}>
                 Address
               </label>
               <input
                 type="text"
                 className="customeraddress"
                 placeholder="Placeholder"
-              />
+              /> */}
 
-              <label className="label">Default Place of Supply</label>
-              <br />
-              <Select placeholder="Select value" options={option} />
-              {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
 
-                    <option value="" selected hidden>Select value</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                     <option value="4">4</option>
-                    </select> */}
+             
+            </div>
+
+            <div className="form-right">
+
+            
+            
               <label className="label">Contacts</label>
               <br />
               <Select placeholder="Select value" options={option} />
-              {/* <select className='customerinput' style={{marginBottom:"18px",color:"#697A8D", outline:"none"}} placeholder='select value' name="values" id="values" >
-
-                    <option value="" selected hidden>Select value</option>
-                     <option value="1">1</option>
-                     <option value="2">2</option>
-                     <option value="3">3</option>
-                     <option value="4">4</option>
-                    </select> */}
+    
               <label className="label">Ownership</label>
               <br />
               <Select
@@ -334,16 +364,13 @@ function AddNewCustomer(props) {
                 style={{ height: "41px" }}
                 options={option}
               />
+  </div>
 
-              <div className="customerbutton_bottom">
-                <button type="button" className="cancelbutton">
-                  Cancel
-                </button>
-                <button type="button" className="savebutton">
-                  Save
-                </button>
-              </div>
-            </div>
+
+
+ 
+
+
           </div>
         </div>
       </div>

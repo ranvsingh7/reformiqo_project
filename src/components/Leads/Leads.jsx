@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Page_heading from '../Page_Heading/Page_heading'
 import "./Leads.scss";
 import logo from "../Customers/images/Email.svg";
 import DropdownAddButton from './DropdownAddButton/DropdownAddButton';
+import DropdownAddButtonOthers from './DropdownAddButtonOthers.jsx/DropdownAddButtonOthers';
+
 // import { RadioGroup, RadioButton } from 'react-radio-buttons';
 
 function Leads() {
+
+const [checked, setChecked] = useState("Contacts")
+
   return (
    <>
     <div className='lead_heading'>
@@ -42,38 +47,33 @@ function Leads() {
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
                     </div>
 
-                    
-                    <label className='leadlabel'>Lead Source Type</label><br/>
+                    <div className="leadbutton_bottom">
+                <button type="button" className="leadsavebutton">
+                  Save
+                </button>
+                <button type="button" className="leadcancelbutton">
+                Cancel
+                </button>
+              </div>
+        </div>
+
+        <div className="leadform-right">
+        <label className='leadlabel' >Lead Source Type</label><br/>
                     <div className='radio-group'>
                     <label className='radio'>
-                        <input type="radio" value="male" name="lead" checked/>Contacts
+                        <input type="radio" value="Contacts" name="lead"   onClick={e=>setChecked("Contacts")} checked={checked == "Contacts"}/>Contacts
                          <span></span> 
                     </label>
                     <label className='radio'>
-                        <input type="radio" value="female" name="lead"/>Others
+                        <input type="radio" value="Others" name="lead" onClick={e=>setChecked("Others")}  checked={checked == "Others"}/>Others
                         <span></span>
                     </label>
                     </div> 
-                  
-
-
-
-                    {/* <div style={{display:"flex", width:"155px", heigth:"16px",marginTop:"5px"}}>
-                    <div>
-                   <input type="radio" id="html" name="fav_language" value="HTML"/>
-                   <label className='leadlabel'  style={{marginLeft:"5px", gap:"18px"}}>Contact</label>
-                    </div>
-                    <div style={{marginLeft:"18px"}}>
-                    <input type="radio" id="css" name="fav_language" value="CSS"/>
-                    <label className='leadlabel' style={{marginLeft:"5px", opacity:"0.5"}}>Others</label>
-                    </div>
-                    </div> */}
-
-                    <label className='leadlabel' style={{marginTop:"15px"}}>Contacts</label><br/>
-                    <DropdownAddButton/>
-                    <label className='leadlabel'>Ownership</label><br/>
-                    <DropdownAddButton/>
-        </div>
+                    <label className='leadlabel' style={{marginTop:"15px"}}>{checked == "Contacts" ? "Contacts" : "Others"}</label><br/>
+                    {checked =="Contacts" ?  <DropdownAddButton/> :<DropdownAddButtonOthers/> }
+                    <label className='leadlabel' style={{marginTop:"15px"}}>Ownership</label><br/>
+                  <DropdownAddButton/> 
+            </div>
     </div> 
     </div>
     </div>
