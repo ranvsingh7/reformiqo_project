@@ -24,7 +24,7 @@ import { GoPlus } from "react-icons/go";
 
 
 
-const FilterAndSearchBar = () => {
+const FilterAndSearchBar = (props) => {
 
     const [exportOpen, setExportOpen] = useState(false);
   const [settingOpen, setSettingOpen] = useState(false);
@@ -275,7 +275,7 @@ const FilterAndSearchBar = () => {
       align: "left",
     },
   ];
-  const [columns, setColumns] = useState(columnsData);
+  const [columns, setColumns] = useState(props.columns);
 
 
 
