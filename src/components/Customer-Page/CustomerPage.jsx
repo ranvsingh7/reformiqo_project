@@ -4,9 +4,10 @@ import Dashboard from "../Dashboard/Dashboard";
 
 import "./CustomerPage.scss";
 
-import { Table } from "antd";
+import { Table, Typography } from "antd";
 import DateRangePickerComp from "../DateRangePicker/DateRangePicker";
 import FilterAndSearchBar from "../FilterAndSearchBar/FilterAndSearchBar";
+import { Padding } from "@syncfusion/ej2/charts";
 
 const CustomerPage = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
@@ -34,7 +35,7 @@ const CustomerPage = () => {
       so_number: "SO-10092",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "UNASSIGNED",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -42,7 +43,7 @@ const CustomerPage = () => {
       so_number: "SO-10093",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "OVERDUE",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -58,7 +59,7 @@ const CustomerPage = () => {
       so_number: "SO-10095",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "OVERDUE",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -74,7 +75,7 @@ const CustomerPage = () => {
       so_number: "SO-10097",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "OVERDUE",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -90,7 +91,7 @@ const CustomerPage = () => {
       so_number: "SO-10099",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "UNASSINED",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -98,7 +99,7 @@ const CustomerPage = () => {
       so_number: "SO-10100",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "UNASSINED",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -106,7 +107,7 @@ const CustomerPage = () => {
       so_number: "SO-10101",
       date: "06/12/2022",
       amount: "₹ 1.20 lacs",
-      status: "ASSIGNED",
+      status: "UNASSINED",
       expected_shipment_date: "06/12/2022",
     },
     {
@@ -181,6 +182,18 @@ const CustomerPage = () => {
       resizable: true,
       // width: 60,
       align: "left",
+      render: (status, record) => (
+        <>
+
+          <Typography.Text 
+          style={record.status === "OVERDUE" ? {background: "rgba(255, 62, 29, .15)", color:"#ff3e1d", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : record.status === "ASSIGNED" ? {background: "rgba(25, 168, 115, .15)", color:"#19a873", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : {background: "rgba(255, 171, 0, .15)", color:"#ffab00", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"}}
+          >
+            {record.status}          
+          </Typography.Text>
+
+        </>
+      )
+
     },
     {
       title: "Expected Shipment Date",
@@ -376,7 +389,7 @@ const CustomerPage = () => {
       {/* SearchBar and Filter */}
 
       <div className="SearchBar-filter">
-        <FilterAndSearchBar />
+        <FilterAndSearchBar columns={columnsData}/>
       </div>
 
       <div className="table-customer-details">
@@ -396,7 +409,7 @@ const CustomerPage = () => {
             dataSource={dataSource}
             columns={columns}
             scroll={{ y: 800, x: 720 }}
-            // style={{ maxWidth: 2 }}
+            style={{ width: "100%", maxWidth: 2200 }}
             rowClassName={(record) =>
               record.key % 2 === 0 ? "highlight_row" : ""
             }
