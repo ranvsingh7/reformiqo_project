@@ -1,13 +1,18 @@
 import Select  from 'react-select';
 import React from 'react'
 import "./DropdownWithProfile.scss";
+import { openHyperlink } from '@syncfusion/ej2/spreadsheet';
 
 function DropdownWithProfile() {
+  const [value1, setValue1] = React.useState('Parth');
+  const handleChange = (event) => {
+    console.log(event.target.value);
+  };
     const option=[
         {
-          value:'one' , label: <div style={{display:"flex", justifyContent:"space-between"}}>
+          value:'Parth' , label: <div style={{display:"flex", justifyContent:"space-between"}}>
                 <div style ={{ display :"flex"}}>
-                <div> <img src="./images/searchbar_icons/User - Avtar.svg" alt="" width="30px" height="30px"/></div>
+                <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
                 <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
                 </div>
                 <div style={{display:"flex" ,alignItems: "center"}}>
@@ -23,7 +28,7 @@ function DropdownWithProfile() {
         {
           value:'two' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User - Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -37,7 +42,7 @@ function DropdownWithProfile() {
         {
           value:'three' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User - Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -49,9 +54,10 @@ function DropdownWithProfile() {
           </div>
         },
         {
-          value:'four' , label: <div style={{display:"flex", justifyContent:"space-between"}}>
+          value:'four' ,
+          label: <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User - Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -60,12 +66,13 @@ function DropdownWithProfile() {
           <p4 className="drpDate" style={{marginLeft:"7px", borderRadius:"50%"}}>19</p4>
           </div>
           </div>
-          </div>
+          </div>,
+          
         },
         {
           value:'five' , label:<div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User - Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -80,7 +87,21 @@ function DropdownWithProfile() {
       
   return (
     <div className='drpprofile'>
-        <Select  placeholder="Select value"  options={option}/>
+        <Select  placeholder="Select value"  options={option}
+            // onChange={handleChange}
+          
+            // menuIsOpen={open}
+      //  defaultValue={option[0]}
+          // theme={(theme) => ({
+          //   ...theme,
+          //   borderRadius: 0,
+          //   colors: {
+          //     ...theme.colors,
+          //     primary25: 'hotpink',
+          //     primary: 'black',
+          //   },
+          // })}
+        />
     </div>
   )
 }

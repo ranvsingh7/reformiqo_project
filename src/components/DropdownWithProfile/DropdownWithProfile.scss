@@ -51,7 +51,7 @@
     -webkit-transition:all 100ms;
     transition:all 100ms;
     background-color:hsl(0, 0%, 100%);
-    border-color:#D9DEE3 !important;
+    border-color:#19A873 !important;
     border-radius:4px;
     border-style:solid;
     border-width:1px;
@@ -59,8 +59,20 @@
     box-sizing:border-box;
 }
 
-.css-13cymwt control:hover{
-border-color: #A1ACB8 !important;
+.css-1dimb5e-singleValue{
+div{
+    div{
+        .drpContact{display: none;}
+        img {display: none;}
+        .drpEmail{display:none}
+        .drpDate{display: none;}
+     }
+   }
+}
+
+.css-13cymwt-control:hover{
+    border-color: #19A873 !important;
+
 }
 
 .css-b62m3t-container
