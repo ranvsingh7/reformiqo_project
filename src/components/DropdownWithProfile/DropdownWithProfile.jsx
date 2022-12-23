@@ -12,7 +12,7 @@ function DropdownWithProfile() {
         {
           value:'Parth' , label: <div style={{display:"flex", justifyContent:"space-between"}}>
                 <div style ={{ display :"flex"}}>
-                <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
+                <div> <img src="/images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
                 <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
                 </div>
                 <div style={{display:"flex" ,alignItems: "center"}}>
@@ -28,7 +28,7 @@ function DropdownWithProfile() {
         {
           value:'two' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="/images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -42,7 +42,7 @@ function DropdownWithProfile() {
         {
           value:'three' , label:  <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="/images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -57,7 +57,7 @@ function DropdownWithProfile() {
           value:'four' ,
           label: <div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="/images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>
@@ -72,7 +72,7 @@ function DropdownWithProfile() {
         {
           value:'five' , label:<div style={{display:"flex", justifyContent:"space-between"}}>
           <div style ={{ display :"flex"}}>
-          <div> <img src="./images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
+          <div> <img src="/images/searchbar_icons/User-Avtar.svg" alt="" width="30px" height="30px"/></div>
           <div style={{marginLeft:"4px"}}><p className='drpName'>Parth Goswami</p><p1 className="drpEmail">Parth.goswami@reformiqo.com</p1></div>
           </div>
           <div style={{display:"flex" ,alignItems: "center"}}>

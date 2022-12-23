@@ -3,7 +3,7 @@
         "title": "Dashboard",
         "id": "db",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bxs-dashboard.svg",
+        "icon": "/images/sidebar_icons/bxs-dashboard.svg",
         "path": "/"
     },
     {
@@ -15,21 +15,21 @@
         "title": "Item & Services",
         "id": "is",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bxs-cube.svg",
+        "icon": "/images/sidebar_icons/bxs-cube.svg",
         "path": "item_&_services"
     },
     {
         "title": "Banking",
         "id": "bk",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bank.svg",
+        "icon": "/images/sidebar_icons/bank.svg",
         "path": "banking"
     },
     {
         "title": "Business Accounts",
         "id": "ba",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/bxs-business.svg",
+        "icon": "/images/sidebar_icons/bxs-business.svg",
         "childrens": [
             {
                 "title": "Leads",
@@ -62,7 +62,7 @@
         "title": "Chart of Accounts",
         "id": "ca",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bxs-receipt.svg",
+        "icon": "/images/sidebar_icons/bxs-receipt.svg",
         "path": "chart_of_accounts"
     },
 
@@ -78,7 +78,7 @@
         "title": "Sales",
         "id": "sl",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/bxs-cart-alt.svg",
+        "icon": "/images/sidebar_icons/bxs-cart-alt.svg",
         "childrens": [
             {
                 "title": "Estimate",
@@ -118,7 +118,7 @@
         "title": "Purchase",
         "id": "pc",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/bag.svg",
+        "icon": "/images/sidebar_icons/bag.svg",
         "childrens": [
             {
                 "title": "Requisitions",
@@ -154,7 +154,7 @@
         "title": "Investment",
         "id": "iv",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/Group 9.svg",
+        "icon": "/images/sidebar_icons/Group-9.svg",
         "childrens": [
             {
                 "title": "Buy",
@@ -170,7 +170,7 @@
         "title": "Production",
         "id": "pd",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/bxs-package.svg",
+        "icon": "/images/sidebar_icons/bxs-package.svg",
         "childrens": [
             {
                 "title": "Bill of Material",
@@ -194,7 +194,7 @@
         "title": "Job Work",
         "id": "jw",
         "type": "dropdown_btn",
-        "icon": "./images/sidebar_icons/bxs-palette.svg",
+        "icon": "/images/sidebar_icons/bxs-palette.svg",
         "childrens": [
             {
                 "title": "Job Orders",
@@ -214,7 +214,7 @@
         "title": "Taxation",
         "id": "tx",
         "type": "dropdown_btn2",
-        "icon": "./images/sidebar_icons/Layer_x0020_1.svg",
+        "icon": "/images/sidebar_icons/Layer_x0020_1.svg",
         "childrens": [
             {
                 "title": "Income Tax",
@@ -251,14 +251,14 @@
         "title": "Workflow Rules",
         "id": "wr",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bxs-arrow-from-top.svg",
+        "icon": "/images/sidebar_icons/bxs-arrow-from-top.svg",
         "path": "workflow_rules"
     },
     {
         "title": "Recurring Transaction",
         "id": "rt",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bx-transfer-alt.svg",
+        "icon": "/images/sidebar_icons/bx-transfer-alt.svg",
         "path": "recurring_transaction"
     },
 
@@ -272,14 +272,14 @@
         "title": "Tasks",
         "id": "tk",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bx-task.svg",
+        "icon": "/images/sidebar_icons/bx-task.svg",
         "path": "tasks"
     },
     {
         "title": "Reports",
         "id": "rs",
         "type": "btn",
-        "icon": "./images/sidebar_icons/bxs-report.svg",
+        "icon": "/images/sidebar_icons/bxs-report.svg",
         "path": "reports"
     }
 ]

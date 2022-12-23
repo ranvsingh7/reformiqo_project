@@ -13,7 +13,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import FilterAndSearchBar from "../FilterAndSearchBar/FilterAndSearchBar";
 
-const Customer = () => {
+const Customer = (props) => {
   const [exportOpen, setExportOpen] = useState(false);
   const [settingOpen, setSettingOpen] = useState(false);
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);
@@ -282,7 +282,7 @@ const Customer = () => {
         parent={"Business Account"}
         child={window.location.pathname.slice(1)}
       />
-      <FilterAndSearchBar  columns={columnsData}/>
+      <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"}/>
 
     
     {/* <DateRangePickerComp /> */}

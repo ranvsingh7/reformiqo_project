@@ -109,7 +109,7 @@ const Sidebar_btn = ({ item, active, setActive }) => {
             <p>{item.title}</p>
             <div className="dropdown_arrow">
               <img
-                src="./images/sidebar_icons/icon-arrow-right.svg"
+                src="/images/sidebar_icons/icon-arrow-right.svg"
                 alt="arrow_right"
               />
             </div>
@@ -154,7 +154,7 @@ const Sidebar_btn = ({ item, active, setActive }) => {
             <p>{item.title}</p>
             <div className="dropdown_arrow">
               <img
-                src="./images/sidebar_icons/icon-arrow-right.svg"
+                src="/images/sidebar_icons/icon-arrow-right.svg"
                 alt="arrow_right"
               />
             </div>
@@ -179,7 +179,7 @@ const Sidebar_btn = ({ item, active, setActive }) => {
                         <div className="dropdown_arrow">
                           {btn.childrens && (
                             <img
-                              src="./images/sidebar_icons/icon-arrow-right.svg"
+                              src="/images/sidebar_icons/icon-arrow-right.svg"
                               alt="arrow_right"
                             />
                           )}
@@ -200,7 +200,7 @@ const Sidebar_btn = ({ item, active, setActive }) => {
                       <div className="dropdown_arrow">
                         {btn.childrens && (
                           <img
-                            src="./images/sidebar_icons/icon-arrow-right.svg"
+                            src="/images/sidebar_icons/icon-arrow-right.svg"
                             alt="arrow_right"
                           />
                         )}
