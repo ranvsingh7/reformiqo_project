@@ -1,4 +1,4 @@
-.contacts
+.Vendors
 {
 
     background-color: white;
@@ -20,24 +20,24 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.contactform-right
+.Vendorform-right
 {
     width: 50%;
     height: 715px;
     margin-left: 30px;
 }
 
-.contactform
+.Vendorform
 {
     height: 700px;
     overflow: scroll;
 }
 
-.contactform::-webkit-scrollbar{
+.Vendorform::-webkit-scrollbar{
     width: 0;
 }
 
-.contact_heading{
+.Vendor_heading{
     margin-left: 30px;
    margin-top: 29px;
     .heading_parent{
@@ -45,12 +45,12 @@
         font-weight: 400;
     }
 }
-.contact_details{
+.Vendor_details{
     display: flex;
     padding: 23px 24px;
 }
 
-.contactbutton_bottom
+.Vendorbutton_bottom
 {
     display: flex;
     float: right;
@@ -89,7 +89,7 @@
     font-weight: 500;
  }
 
-.contactinput
+.Vendorinput
 {
     height: 38px;
     width: 330px;

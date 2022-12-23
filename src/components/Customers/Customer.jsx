@@ -282,13 +282,8 @@ const Customer = (props) => {
         parent={"Business Account"}
         child={window.location.pathname.slice(1)}
       />
+      <div className="customer-table-container">
       <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"}/>
-
-    
-    {/* <DateRangePickerComp /> */}
-  
-      
-
       <div className="tableData">
         {/* <Resizable> */}
         <Table
@@ -305,13 +300,14 @@ const Customer = (props) => {
           }}
           dataSource={dataSource}
           columns={columns}
-          scroll={{ y: 800, x: 1120 }}
-          style={{ maxWidth: 2200 }}
+          scroll={{ y: 800, x: 1000 }}
+          style={{ maxWidth: 2200, width: "100%" }}
           rowClassName={(record) =>
             record.key % 2 === 0 ? "highlight_row" : ""
           }
         />
         {/* </Resizable> */}
+      </div>
       </div>
     </div>
     </>

@@ -1,8 +1,17 @@
+.customer-table-container{
+    // border: 1px solid;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #ffff;
+
+}
 .customers{
     // border: 1px solid;
     margin: auto;
     width: 95%;
     max-width: 2200px;
+    padding: 5px;
     // height: 780px;
     margin-top: 30px;
     overflow: scroll;
@@ -13,6 +22,8 @@
     }
     .tableData{
         height: max-content;
+        margin-top: 20px;
+        // padding: 5px;
         max-width: 2220px;
         // min-width: 100%;
         // border: 1px solid;
@@ -30,7 +41,9 @@
 
 
 
-
+.ant-table-container{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 .ant-table-thead .ant-table-cell {
     // background-color: rgba(25, 168, 115, .2) !important;
