@@ -21,10 +21,6 @@ import VendorsData from './components/Vendors/Vendors-Data/VendorsData';
 import Vendors from './components/Vendors/Vendors';
 
 
-import Accounts from './components/Chart_Of_Account/Accounts/Accounts';
-
-import VendorsData from './components/Vendors/Vendors-Data/VendorsData';
-import Vendors from './components/Vendors/Vendors';
 
 
 
