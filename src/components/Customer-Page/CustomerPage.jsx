@@ -1,13 +1,11 @@
 import { React, useState, useRef } from "react";
 import Page_heading from "../Page_Heading/Page_heading";
 import Dashboard from "../Dashboard/Dashboard";
-
 import "./CustomerPage.scss";
-
 import { Table, Typography } from "antd";
 import DateRangePickerComp from "../DateRangePicker/DateRangePicker";
 import FilterAndSearchBar from "../FilterAndSearchBar/FilterAndSearchBar";
-import { Padding } from "@syncfusion/ej2/charts";
+
 
 const CustomerPage = () => {
   const [selectedRowKeys, setSelectedRowKeys] = useState([]);

@@ -1,5 +1,8 @@
 import React from "react";
 import DateRangePickerComp from "../DateRangePicker/DateRangePicker";
+import OffCanvasExample from "../OffCanvas/OffCanvasExample";
+
+//import Offcanvas from "../OffCanvas/OffCanvasExample";
 import "./Dashboard.scss";
 
 
@@ -144,6 +147,8 @@ const Dashboard = () => {
       
     </div>
     {/* <DateRangePickerComp /> */}
+<OffCanvasExample/>
+ {/* <Offcanvas/>   */}
 
     </>
   );

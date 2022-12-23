@@ -6,78 +6,59 @@ import DropdownSimple from './DropdownSimple/DropdownSimple';
 // import Select from "react-select";
 
 function Contacts() {
-
-    // const option = [
-    //     {
-    //       value: "Owner",
-    //       label:(<div className='contdetails' >Owner</div>),
-    //     },
-    //     {
-    //       value: "Accountant",
-    //       label: (<div className='contdetails'>Accountant</div>),
-    //     },
-    //     {
-    //       value: "Sales Person",
-    //       label: (<div className='contdetails' >Sales Person</div>),
-    //     },
-    //     {
-    //       value: "Key Person",
-    //       label: (<div className='contdetails'>Key Person</div>),
-    //     },
-    //     {
-    //       value: "Technician",
-    //       label: (<div className='contdetails'>Technician</div>),
-    //     },
-    //     {
-    //         value: "Manager",
-    //         label: (<div className='contdetails'>Manager</div>),
-    //       },
-    //   ];
-
   return (
   <>
    <div className='contact_heading'>
-    <Page_heading  parent={"Business Account / Contacts"} child={"Add New Contact"}/>
+    {/* <Page_heading  parent={"Business Account / Contacts"} child={"Add New Contact"}/> */}
     </div>
     <div className='contactform'>
     <div className='contacts'>
     <h1 className='box_heading1'>New Contact</h1>
      <div className='contact_details' > 
     <div className='form-left'>
-                    <label className='leadlabel' style={{marginTop:"5px"}}>Name</label><br/>
-                    <div className='leadinput' style={{marginTop:"5px"}}>
+                    <label className='contactlabel' style={{marginTop:"5px"}}>Name</label><br/>
+                    <div className='contactinput' style={{marginTop:"5px"}}>
                         <img src={logo} className="customerimg"/>
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
                     </div>
-                    <label className='leadlabel' style={{marginTop:"5px"}}>Mobile No.</label><br/>
-                    <div className='leadinput' style={{marginTop:"5px"}}>
+                    <label className='contactlabel' style={{marginTop:"5px"}}>Mobile No.</label><br/>
+                    <div className='contactinput' style={{marginTop:"5px"}}>
 
                         <img src={logo} className="customerimg"/>
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
 
                     </div>
-                    <label className='leadlabel' style={{marginTop:"5px"}}>Email</label><br/>
-                    <div className='leadinput' style={{marginTop:"5px"}}>
+                    <label className='contactlabel' style={{marginTop:"5px"}}>Email</label><br/>
+                    <div className='contactinput' style={{marginTop:"5px"}}>
+
+                        <img src={logo} className="customerimg"/>
+                        <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
+
+                    </div>
+                    <label className='contactlabel' style={{marginTop:"5px"}}>Date of Birth</label><br/>
+                    <div className='contactinput' style={{marginTop:"5px"}}>
 
                         <img src={logo} className="customerimg"/>
                         <input type="text" style={{border:"none", outline:"none"}} placeholder="Placeholder" /> 
 
                     </div>
                 
-                    <label className='leadlabel' style={{marginTop:"15px"}}>Type</label><br/>
+                    <label className='contactlabel' style={{marginTop:"15px"}}>Position</label><br/>
                     <DropdownSimple/>
-                    <div className="leadbutton_bottom">
-                <button type="button" className="leadsavebutton">
+                    <label className='contactlabel' style={{marginTop:"15px"}}>Ownership</label><br/>
+                    <DropdownSimple/>
+                    <div className="contactbutton_bottom">
+                <button type="button" className="contactsavebutton">
                   Save
                 </button>
-                <button type="button" className="leadcancelbutton">
+                <button type="button" className="contactcancelbutton">
                 Cancel
                 </button>
               </div>
                   
         </div>
 
-        <div className="contactform-right">
+         {/* <div className="contactform-right">
         <label className='leadlabel'>Lead Source</label><br/>
                     <DropdownSimple/>
 
@@ -89,26 +70,7 @@ function Contacts() {
 
                     </div>
 
-                    {/* <div className='contactbutton_bottom'>
-            <button type='button' className='cancelbutton'>Cancel</button>
-            <button type='button' className='savebutton'>Save</button>
-            </div> */}
-        {/* <label className='leadlabel' >Lead Source Type</label><br/>
-                    <div className='radio-group'>
-                    <label className='radio'>
-                        <input type="radio" value="Contacts" name="lead"  />Contacts
-                         <span></span> 
-                    </label>
-                    <label className='radio'>
-                        <input type="radio" value="Others" name="lead" />Others
-                        <span></span>
-                    </label>
-                    </div> 
-                    <label className='leadlabel' style={{marginTop:"15px"}}>{checked == "Contacts" ? "Contacts" : "Others"}</label><br/>
-                    {checked =="Contacts" ?  <DropdownAddButton/> :<DropdownAddButtonOthers/> }
-                    <label className='leadlabel' style={{marginTop:"15px"}}>Ownership</label><br/>
-                  <DropdownAddButton/>  */}
-            </div>
+            </div>  */}
     </div> 
     </div>
     </div>

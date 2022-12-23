@@ -1,15 +1,13 @@
-import { React, useState, useRef } from "react";
-import FilterAndSearchBar from '../../FilterAndSearchBar/FilterAndSearchBar'
-import Page_heading from '../../Page_Heading/Page_heading'
-
-import "./ContactsData.scss"
-
-
 import { Table } from "antd";
-import OffCanvasExample from "../../OffCanvas/OffCanvasExample";
-import Contacts from "../Contacts";
+import { React, useState, useRef } from "react";
+import FilterAndSearchBar from '../../FilterAndSearchBar/FilterAndSearchBar';
+import OffCanvasExample from '../../OffCanvas/OffCanvasExample';
+import Page_heading from '../../Page_Heading/Page_heading';
+import AccountForm from "../AccountForm/AccountForm";
+import "./Accounts.scss";
 
-const ContactsData = () => {
+function Accounts() {
+
 
     const [selectedRowKeys, setSelectedRowKeys] = useState([]);
     const [selectedRows, setSelectedRows] = useState([]);
@@ -233,13 +231,14 @@ const ContactsData = () => {
       .getElementById("searchbar_container")
       .classList.toggle("container_display");
   }
+
   return (
-    <div className='contacts-data'>
-        <Page_heading  parent={"Business Account"} child={"contacts"}/>
+    <div className='account-data'>
+        <Page_heading  parent={"Chart of Accounts"} child={"Accounts"}/>
 
         <div className="contacts-table-container">
-        <FilterAndSearchBar columns={columnsData} addBtnName={"Contacts"} path={"add_contacts"} />
-        <OffCanvasExample  form={<Contacts/>}/>
+        <FilterAndSearchBar columns={columnsData} addBtnName={"Account"} path={"add_account"} />
+        <OffCanvasExample  form={<AccountForm/>}/>
         <Table
             ref={componentRef}
             rowSelection={{
@@ -264,4 +263,4 @@ const ContactsData = () => {
   )
 }
 
-export default ContactsData
+export default Accounts
