@@ -282,17 +282,8 @@ const Customer = (props) => {
         parent={"Business Account"}
         child={window.location.pathname.slice(1)}
       />
-
-
-    
-    {/* <DateRangePickerComp /> */}
-  
-      
-
-
       <div className="customer-table-container">
       <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"}/>
-
       <div className="tableData">
         {/* <Resizable> */}
         <Table

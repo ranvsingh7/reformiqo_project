@@ -14,6 +14,8 @@ import Leads from './components/Leads/Leads';
 import Contacts from './components/Contacts/Contacts';
 import LeadsData from './components/Leads/Leads-Data/LeadsData';
 import ContactsData from './components/Contacts/Contacts-Data/ContactsData';
+import VendorsData from './components/Vendors/Vendors-Data/VendorsData';
+import Vendors from './components/Vendors/Vendors';
 
 import Accounts from './components/Chart_Of_Account/Accounts/Accounts';
 
