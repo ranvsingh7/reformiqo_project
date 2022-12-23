@@ -240,13 +240,13 @@ const CustomerPage = () => {
             <div>
               <img
                 className="analytic-icon"
-                src="./images/icons/analytics_icon.svg"
+                src="/images/icons/analytics_icon.svg"
                 alt="analytics_icon"
               />
               <p>Analytics</p>
               <img
                 className="right-arrow"
-                src="./images/icons/right-arrow-icon.svg"
+                src="/images/icons/right-arrow-icon.svg"
                 alt="arrow-icon"
               />
             </div>
@@ -286,13 +286,13 @@ const CustomerPage = () => {
             <div>
               <img
                 className="analytic-icon"
-                src="./images/icons/analytics_icon.svg"
+                src="/images/icons/analytics_icon.svg"
                 alt="analytics_icon"
               />
               <p>Analytics</p>
               <img
                 className="right-arrow"
-                src="./images/icons/right-arrow-icon.svg"
+                src="/images/icons/right-arrow-icon.svg"
                 alt="arrow-icon"
               />
             </div>
@@ -332,13 +332,13 @@ const CustomerPage = () => {
             <div>
               <img
                 className="analytic-icon"
-                src="./images/icons/analytics_icon.svg"
+                src="/images/icons/analytics_icon.svg"
                 alt="analytics_icon"
               />
               <p>Analytics</p>
               <img
                 className="right-arrow"
-                src="./images/icons/right-arrow-icon.svg"
+                src="/images/icons/right-arrow-icon.svg"
                 alt="arrow-icon"
               />
             </div>
@@ -389,7 +389,7 @@ const CustomerPage = () => {
       {/* SearchBar and Filter */}
 
       <div className="SearchBar-filter">
-        <FilterAndSearchBar columns={columnsData}/>
+        <FilterAndSearchBar columns={columnsData} addBtnName={"Sales Order"} path={"sales_order"}/>
       </div>
 
       <div className="table-customer-details">
@@ -419,7 +419,7 @@ const CustomerPage = () => {
         <div className="customer-details">
           <div className="customer-name-profile">
             <div className="customer-image">
-              <img src="./images/icons/user-profile.svg" alt="" />
+              <img src="/images/icons/user-profile.svg" alt="" />
             </div>
             <div className="name-container">
               <h1 className="business-name">
@@ -434,14 +434,14 @@ const CustomerPage = () => {
           <div className="customer-info">
             <h2 className="customer-info-heading">CUSTOMER INFO</h2>
             <div className="customer-gst">
-              <img src="./images/icons/gst-icon.svg" alt="" />
+              <img src="/images/icons/gst-icon.svg" alt="" />
               <h4>
                 <span>GST IN :</span> 24GGGGG1314R9Z6
               </h4>
             </div>
 
             <div className="customer-email">
-              <img src="./images/icons/email-green.svg" alt="" />
+              <img src="/images/icons/email-green.svg" alt="" />
               <div className="email">
                 <h4>
                   <span>Work :</span> Ashish.jaria@reformiqo.com
@@ -453,7 +453,7 @@ const CustomerPage = () => {
             </div>
 
             <div className="customer-email">
-              <img src="./images/icons/phone-green.svg" alt="" />
+              <img src="/images/icons/phone-green.svg" alt="" />
               <div className="email">
                 <h4>
                   <span>Work :</span> +91 XXXXXXXXXX
@@ -465,7 +465,7 @@ const CustomerPage = () => {
             </div>
 
             <div className="customer-address">
-              <img src="./images/icons/location-green.svg" alt="" />
+              <img src="/images/icons/location-green.svg" alt="" />
               <div className="address">
                 <h3>Billing Address</h3>
                 <h4>
@@ -483,7 +483,7 @@ const CustomerPage = () => {
             <hr />
             <h2 className="customer-info-heading">OWNERSHIP</h2>
             <div className="ownership">
-              <img src="./images/icons/location-green.svg" alt="" />
+              <img src="/images/icons/location-green.svg" alt="" />
               <h2>Kushal Nahata</h2>
             </div>
 

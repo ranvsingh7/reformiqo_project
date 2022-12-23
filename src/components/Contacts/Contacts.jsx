@@ -37,7 +37,7 @@ function Contacts() {
   return (
   <>
    <div className='contact_heading'>
-    <Page_heading  parent={"Business Account"} child={"Add New Contact"}/>
+    <Page_heading  parent={"Business Account / Contacts"} child={"Add New Contact"}/>
     </div>
     <div className='contactform'>
     <div className='contacts'>

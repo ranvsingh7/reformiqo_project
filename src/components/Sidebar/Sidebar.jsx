@@ -42,11 +42,11 @@ const Sidebar = () => {
         <div className="sidebar_container">
           <div className="sidebar_logo">
             <img
-              src="./images/sidebar_icons/Brand-logo.png"
+              src="/images/sidebar_icons/Brand-logo.png"
               alt="sidebar_logo"
             />
             <div className="collapse_btn" onClick={handleClick}>
-              <img src="./images/sidebar_icons/icon.svg" alt="arrow" />
+              <img src="/images/sidebar_icons/icon.svg" alt="arrow" />
             </div>
           </div>
 

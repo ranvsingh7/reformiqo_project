@@ -83,12 +83,12 @@
             gap: 5px;
             border: none;
             width: auto;
-            padding: 0px 13px;
+            padding: 0px 16px 0px 13px;
             // justify-content: center;
             display: flex;
             align-items: center;
             .addNewBtn_text{
-                min-width: 90px;
+                // min-width: 90px;
             }
         }
     }
@@ -183,3 +183,4 @@
         transition: .5s ease;
     }
 }
+

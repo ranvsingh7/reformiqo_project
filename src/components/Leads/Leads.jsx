@@ -14,7 +14,7 @@ const [checked, setChecked] = useState("Contacts")
   return (
    <>
     <div className='lead_heading'>
-    <Page_heading  parent={"Business Account"} child={"Add New Lead"}/>
+    <Page_heading  parent={"Business Account / Leads"} child={"Add New Lead"}/>
     </div>
     <div className='leadform'>
     <div className='leads'>

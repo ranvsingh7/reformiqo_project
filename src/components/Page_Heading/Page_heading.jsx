@@ -27,15 +27,15 @@ const Page_heading = ({ parent, child }) => {
     </div>
       <div className="menu">
         {/* <CgSearch /> */}
-        <img className="search-icon" src="./images/searchbar_icons/Search Icon.svg" alt="" onClick={searchbarOn} />
-        <img className="app-icon" src="./images/searchbar_icons/App.svg" alt="" />
+        <img className="search-icon" src="/images/searchbar_icons/Search Icon.svg" alt="" onClick={searchbarOn} />
+        <img className="app-icon" src="/images/searchbar_icons/App.svg" alt="" />
 
         <div className="notification_bell">
-          <img src="./images/searchbar_icons/icon-bell.svg" alt="" />
+          <img src="/images/searchbar_icons/icon-bell.svg" alt="" />
           <div className="notification_count">4</div>
         </div>
 
-        <img src="./images/searchbar_icons/User-Avtar.svg" alt="user" />
+        <img src="/images/searchbar_icons/User-Avtar.svg" alt="user" />
       </div>
     </div>
   </>

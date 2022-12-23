@@ -50,7 +50,7 @@ const DateRangePickerComp = () => {
   return (
     <div className="calendarWrap">
       <div className="calendarInput">
-        <img src="./images/icons/calendar.svg" alt="" />
+        <img src="/images/icons/calendar.svg" alt="" />
         <input
           value={`${format(range[0].startDate, "dd/MM/yyyy")} to ${format(
             range[0].endDate,

@@ -30,12 +30,12 @@ document.addEventListener("keydown", e =>{
       </div>
       
       {/* <div className="profile_btn">
-        <img src="./images/searchbar_icons/App.svg" alt="app" />
+        <img src="/images/searchbar_icons/App.svg" alt="app" />
         <div className="bell_icon">
-          <img src="./images/searchbar_icons/icon-bell.svg" alt="notification" />
+          <img src="/images/searchbar_icons/icon-bell.svg" alt="notification" />
           <div>4</div>
         </div>
-        <img src="./images/searchbar_icons/User - Avtar.svg" alt="" />
+        <img src="/images/searchbar_icons/User - Avtar.svg" alt="" />
       </div> */}
     </div>
       )
@@ -60,7 +60,7 @@ export default SearchBar;
 
 // <div className="search_bar">
 //       <img
-//         src="./images/searchbar_icons/Search Icon.svg"
+//         src="/images/searchbar_icons/Search Icon.svg"
         
 //         className="search_logo"
 //         alt="searchbar_icon"
@@ -68,11 +68,11 @@ export default SearchBar;
 //       <input type="text" name="search_bar" />
 
 //       <div className="profile_btn">
-//         <img src="./images/searchbar_icons/App.svg" alt="app" />
+//         <img src="/images/searchbar_icons/App.svg" alt="app" />
 //         <div className="bell_icon">
-//           <img src="./images/searchbar_icons/icon-bell.svg" alt="notification" />
+//           <img src="/images/searchbar_icons/icon-bell.svg" alt="notification" />
 //           <div>4</div>
 //         </div>
-//         <img src="./images/searchbar_icons/User - Avtar.svg" alt="" />
+//         <img src="/images/searchbar_icons/User - Avtar.svg" alt="" />
 //       </div>
 //     </div>

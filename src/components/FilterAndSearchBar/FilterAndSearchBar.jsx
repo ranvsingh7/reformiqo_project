@@ -11,7 +11,7 @@ import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
 
 import "./FilterAndSearchBar.scss"
-
+import Select from "react-select";
 
 import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
@@ -336,10 +336,12 @@ const FilterAndSearchBar = (props) => {
     <>
          <div className="table_nav">
         <div className="search_customer">
-          <div className="search_icon">
+          {/* <div className="search_icon">
             <CgSearch size={23} color="#697A8D" />
           </div>
-          <input type="text" placeholder="Search Customer" />
+          <input type="text" placeholder="Search Customer" /> */}
+          <Select   height={200} styles={{height:200}}/>
+
         </div>
 
         <div className="tableBtn_container" ref={menuRef}>
@@ -356,7 +358,7 @@ const FilterAndSearchBar = (props) => {
             >
               <div className="export_dropdown_btn">
                 <div className="export_icon">
-                  <img src="./images/icons/print_icon.svg" alt="print_icon" />
+                  <img src="/images/icons/print_icon.svg" alt="print_icon" />
                 </div>
                 {/* <span>Print</span> */}
                 <ReactToPrint
@@ -368,7 +370,7 @@ const FilterAndSearchBar = (props) => {
                 <div className="export_dropdown_btn">
                   <div className="export_icon">
                     <img
-                      src="./images/icons/document_icon.svg"
+                      src="/images/icons/document_icon.svg"
                       alt="document_icon"
                     />
                   </div>
@@ -377,13 +379,13 @@ const FilterAndSearchBar = (props) => {
               </CSVLink>
               <div className="export_dropdown_btn" onClick={downloadPdf}>
                 <div className="export_icon">
-                  <img src="./images/icons/pdf_icon.svg" alt="pdf_icon" />
+                  <img src="/images/icons/pdf_icon.svg" alt="pdf_icon" />
                 </div>
                 <span>Pdf</span>
               </div>
               <div className="export_dropdown_btn">
                 <div className="export_icon">
-                  <img src="./images/icons/copy_icon.svg" alt="copy_icon" />
+                  <img src="/images/icons/copy_icon.svg" alt="copy_icon" />
                 </div>
                 Copy
               </div>
@@ -397,16 +399,16 @@ const FilterAndSearchBar = (props) => {
             Filter
           </div>
 
-          <Link className="tableBtn addNewBtn" exact to= "/addcustomers" >
+          <Link className="tableBtn addNewBtn"  to= {props.path} >
             <GoPlus />
-            <div className="addNewBtn_text">New Customer</div>
+            <div className="addNewBtn_text">New {props.addBtnName}</div>
             </Link>
 
           
           
           <div className="settings" ref={menuRef}>
             <img
-              src="./images/icons/setting.svg"
+              src="/images/icons/setting.svg"
               alt="icon"
               onClick={openSetting}
             />
@@ -442,7 +444,7 @@ const FilterAndSearchBar = (props) => {
                               </div>
                               <div>
                                 <img
-                                  src="./images/icons/bx-dialpad-alt.svg"
+                                  src="/images/icons/bx-dialpad-alt.svg"
                                   alt="icon"
                                 />
                               </div>

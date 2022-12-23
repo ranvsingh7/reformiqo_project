@@ -12,6 +12,8 @@ import AddNewCustomer from './components/Customers/AddNewCustomer';
 import CustomerPage from './components/Customer-Page/CustomerPage';
 import Leads from './components/Leads/Leads';
 import Contacts from './components/Contacts/Contacts';
+import LeadsData from './components/Leads/Leads-Data/LeadsData';
+import ContactsData from './components/Contacts/Contacts-Data/ContactsData';
 
 function App() {
   return (
@@ -28,12 +30,14 @@ function App() {
           <Routes>
           {/* <Route path='/' element={<Dashboard/>} /> */}
             {/* <Route path='customers' element={<Customers />} /> */}
-            <Route path='customers' element={<CustomerPage/>} />
-          <Route path='leads' element={<Leads/>} />
-          <Route path='contacts' element={<Contacts/>} />
-            <Route path='customers' element={<Customers/>} />
-            <Route path='addcustomers' element={<AddNewCustomer/>} />
-            <Route path='/' element={<Dashboard/>} />
+          <Route path='customers' element={<CustomerPage/>} />
+          <Route path='leads' element={<LeadsData/>} />
+          <Route path='leads/add_leads' element={<Leads/>} />
+          <Route path='contacts' element={<ContactsData/>} />
+          <Route path='contacts/add_contacts' element={<Contacts/>} />
+          <Route path='customers' element={<Customers/>} />
+          <Route path='addcustomers' element={<AddNewCustomer/>} />
+          <Route path='/' element={<Dashboard/>} />
           </Routes>
           {/* <Footer /> */}
           </div>
