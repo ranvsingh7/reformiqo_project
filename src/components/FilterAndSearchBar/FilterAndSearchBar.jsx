@@ -342,11 +342,11 @@ const FilterAndSearchBar = (props) => {
     <>
          <div className="table_nav">
         <div className="search_customer">
-          {/* <div className="search_icon">
+          <div className="search_icon">
             <CgSearch size={23} color="#697A8D" />
           </div>
-          <input type="text" placeholder="Search Customer" /> */}
-          <Select   height={200} styles={{height:200}}/>
+          <input type="text" placeholder="Search Customer" />
+          {/* <Select   height={200} styles={{height:200}}/> */}
 
         </div>
 
