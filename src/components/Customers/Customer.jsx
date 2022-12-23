@@ -282,7 +282,7 @@ const Customer = (props) => {
         parent={"Business Account"}
         child={window.location.pathname.slice(1)}
       />
-      <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"}/>
+      <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"} />
 
     
     {/* <DateRangePickerComp /> */}

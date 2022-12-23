@@ -336,6 +336,7 @@ function AddNewCustomer(props) {
               <label className="label">Default Place of Supply</label>
               <br />
               <Select placeholder="Select value" options={option} />
+
               {/* <label className="label" style={{ marginTop: "5px" }}>
                 Address
               </label>
@@ -364,6 +365,7 @@ function AddNewCustomer(props) {
                 style={{ height: "41px" }}
                 options={option}
               />
+              
   </div>
 
 

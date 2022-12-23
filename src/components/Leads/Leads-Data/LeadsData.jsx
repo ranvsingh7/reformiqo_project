@@ -6,6 +6,8 @@ import "./Leads-Data.scss"
 
 
 import { Table } from "antd";
+import OffCanvasExample from "../../OffCanvas/OffCanvasExample";
+import Leads from "../Leads"
 
 const LeadsData = () => {
 
@@ -237,7 +239,7 @@ const LeadsData = () => {
 
         <div className="leads-table-container">
         <FilterAndSearchBar columns={columnsData} addBtnName={"Lead"} path={"add_leads"} />
-
+        <OffCanvasExample form={<Leads/>}/>
         <Table
             ref={componentRef}
             rowSelection={{

@@ -14,6 +14,7 @@ import Leads from './components/Leads/Leads';
 import Contacts from './components/Contacts/Contacts';
 import LeadsData from './components/Leads/Leads-Data/LeadsData';
 import ContactsData from './components/Contacts/Contacts-Data/ContactsData';
+import Accounts from './components/Chart_Of_Account/Accounts/Accounts';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path='contacts/add_contacts' element={<Contacts/>} />
           <Route path='customers' element={<Customers/>} />
           <Route path='addcustomers' element={<AddNewCustomer/>} />
+          <Route path='accounts' element={<Accounts/>} />
           <Route path='/' element={<Dashboard/>} />
           </Routes>
           {/* <Footer /> */}

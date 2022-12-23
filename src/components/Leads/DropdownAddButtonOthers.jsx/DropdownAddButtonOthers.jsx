@@ -39,7 +39,9 @@ function DropdownAddButtonOthers() {
       ];
   return (
     <div className='drpsimple'>
-       <Select placeholder="Select value" options={option} />
+       <Select placeholder="Select value" options={option} 
+       onMenuClose={false}
+       />
     </div>
   )
 }

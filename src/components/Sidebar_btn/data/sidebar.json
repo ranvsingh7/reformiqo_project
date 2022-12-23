@@ -63,7 +63,7 @@
         "id": "ca",
         "type": "btn",
         "icon": "/images/sidebar_icons/bxs-receipt.svg",
-        "path": "chart_of_accounts"
+        "path": "/accounts"
     },
 
 

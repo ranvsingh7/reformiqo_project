@@ -331,6 +331,12 @@ const FilterAndSearchBar = (props) => {
     
       const componentRef = useRef();
 
+        function showCanvas ()
+        {
+          var m = document.querySelector('.menu1');
+	      	m.classList.add('smenu');
+        }
+
 
   return (
     <>
@@ -399,10 +405,10 @@ const FilterAndSearchBar = (props) => {
             Filter
           </div>
 
-          <Link className="tableBtn addNewBtn"  to= {props.path} >
+          <div className="tableBtn addNewBtn" onClick={showCanvas}  >
             <GoPlus />
             <div className="addNewBtn_text">New {props.addBtnName}</div>
-            </Link>
+            </div>
 
           
           
