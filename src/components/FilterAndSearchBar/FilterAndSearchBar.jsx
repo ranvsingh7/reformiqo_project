@@ -335,6 +335,8 @@ const FilterAndSearchBar = (props) => {
         {
           var m = document.querySelector('.menu1');
 	      	m.classList.add('smenu');
+          //document.root.style.backgroundColor='rgba(0,0,0,0.4)';
+          document.getElementById('gradient').classList.add('body_gradient');
         }
 
 
