@@ -348,9 +348,11 @@ const FilterAndSearchBar = (props) => {
             <CgSearch size={23} color="#697A8D" />
           </div>
           {/* <input type="text" placeholder="Search Customer" /> */}
+
           <div className="searchbar_typehead">
           <Select styles={{height:0}}/>
           </div>
+
 
         </div>
 
