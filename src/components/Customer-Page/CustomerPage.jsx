@@ -386,6 +386,7 @@ const CustomerPage = () => {
 
       {/* SearchBar and Filter */}
 
+      <div className="searchBarAndFilter">
       <div className="SearchBar-filter">
         <FilterAndSearchBar columns={columnsData} addBtnName={"Sales Order"} path={"sales_order"}/>
       </div>
@@ -407,7 +408,7 @@ const CustomerPage = () => {
             dataSource={dataSource}
             columns={columns}
             scroll={{ y: 800, x: 720 }}
-           style={{ width: "100%" }}
+           style={{ width: 750 }}
             rowClassName={(record) =>
               record.key % 2 === 0 ? "highlight_row" : ""
             }
@@ -487,6 +488,7 @@ const CustomerPage = () => {
 
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
