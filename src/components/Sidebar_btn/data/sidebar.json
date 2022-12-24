@@ -14,9 +14,26 @@
     {
         "title": "Item & Services",
         "id": "is",
-        "type": "btn",
+        "type": "dropdown_btn",
         "icon": "/images/sidebar_icons/bxs-cube.svg",
-        "path": "item_&_services"
+        "childrens": [
+            {
+                "title": "Inventory Item",
+                "path": "/inventory_item"
+            },
+            {
+                "title": "Non Inventory Item",
+                "path": "/non_inventory_item"
+            },
+            {
+                "title": "Service",
+                "path": "/service"
+            },
+            {
+                "title": "Fixed Assets",
+                "path": "/fixed_assets"
+            }
+        ]
     },
     {
         "title": "Banking",
@@ -261,9 +278,6 @@
         "icon": "/images/sidebar_icons/bx-transfer-alt.svg",
         "path": "recurring_transaction"
     },
-
-
-
     {
         "title": "OTHERS",
         "type": "group"
@@ -290,7 +304,7 @@
         "title": "List of Modules",
         "id": "lm",
         "type": "btn",
-        "icon": "/images/sidebar_icons/bx-task.svg",
+        "icon": "/images/sidebar_icons/bx-list-ul.svg",
         "path": "list_of_modules"
     }
 ]
