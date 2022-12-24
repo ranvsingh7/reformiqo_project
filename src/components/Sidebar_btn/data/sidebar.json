@@ -281,5 +281,16 @@
         "type": "btn",
         "icon": "/images/sidebar_icons/bxs-report.svg",
         "path": "reports"
+    },
+    {
+        "title": "MODULE",
+        "type": "group"
+    },
+    {
+        "title": "List of Modules",
+        "id": "lm",
+        "type": "btn",
+        "icon": "/images/sidebar_icons/bx-task.svg",
+        "path": "list_of_modules"
     }
 ]
