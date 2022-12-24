@@ -23,6 +23,7 @@ function App() {
 
           
           <div className='main'>
+          <div className='' id="gradient"></div>
           <Sidebar/>
           <div className='rightScreen'>
           {/* <SearchBar /> */}
