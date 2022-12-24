@@ -251,7 +251,7 @@ const VendorsData = () => {
             }}
             dataSource={dataSource}
             columns={columns}
-            scroll={{ y: 800, x: 720 }}
+            // scroll={{ y: 800, x: 720 }}
         //    style={{ width: "100%" }}
             rowClassName={(record) =>
               record.key % 2 === 0 ? "highlight_row" : ""
