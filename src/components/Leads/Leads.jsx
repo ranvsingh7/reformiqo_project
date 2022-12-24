@@ -70,7 +70,7 @@ const [checked, setChecked] = useState("Contacts")
               </div>
         </div>
 
-        <div className="leadform-right">
+        {/* <div className="leadform-right">
         <label className='leadlabel' >Lead Source Type</label><br/>
                     <div className='radio-group'>
                     <label className='radio'>
@@ -86,7 +86,7 @@ const [checked, setChecked] = useState("Contacts")
                     {checked =="Contacts" ?  <DropdownAddButton/> :<DropdownAddButtonOthers/> }
                     <label className='leadlabel' style={{marginTop:"15px"}}>Ownership</label><br/>
                   <DropdownAddButton/> 
-            </div>
+            </div> */}
     </div> 
     </div>
     </div>
