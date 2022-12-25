@@ -7,7 +7,7 @@
     font-weight: 500;
     :focus
     {
-        outline: #19A873;
+        outline: #5C5AD0;
         border: 3px solid red;
     }
   
@@ -48,7 +48,7 @@
     -webkit-transition:all 100ms;
     transition:all 100ms;
     background-color:hsl(0, 0%, 100%);
-    border-color:#19A873 !important;
+    border-color:#5C5AD0 !important;
     border-radius:4px;
     border-style:solid;
     border-width:1px;
@@ -57,7 +57,7 @@
 }
 
 .css-13cymwt-control:hover{
-    border-color: #19A873 !important;
+    border-color: #5C5AD0 !important;
 }
 
 .css-b62m3t-container
@@ -136,15 +136,15 @@ color: #566A7F;
         -moz-user-select:none;
         -ms-user-select:none;
         user-select:none;
-       -webkit-tap-highlight-color:#E3F1EC ;
-       background-color:#E3F1EC  ;
+       -webkit-tap-highlight-color:#5c5ad133 ;
+       background-color:#5c5ad133  ;
         padding:80px 10px 20px 50px ;
         box-sizing:border-box;
     }
 
 .css-d7l1ni-option .contdetails{
-    color :#19A873 !important ;
-   // background-color: #19A873;
+    color :#5C5AD0 !important ;
+   // background-color: #5C5AD0;
      padding: 4px;
     // width: 5px;
     // height: 20px;
@@ -152,7 +152,7 @@ color: #566A7F;
 }
 
         .css-d7l1ni-option:active{
-        background-color:#E3F1EC !important;
+        background-color:#5c5ad133 !important;
      
         }
  
@@ -174,8 +174,8 @@ color: #566A7F;
 
 
         .css-10wo9uf-option:active{
-            background-color:#E3F1EC !important;
-           //  color: #19A873 !important;
+            background-color:#5c5ad133 !important;
+           //  color: #5C5AD0 !important;
         }
        
         .css-tr4s17-option{
@@ -183,8 +183,8 @@ color: #566A7F;
             display:block;
             font-size:inherit;
             width:100%;
-            background-color:#E3F1EC !important;
-            color: #19A873 !important;
+            background-color:#5c5ad133 !important;
+            color: #5C5AD0 !important;
             padding:20px 10px 20px 50px ;
             box-sizing:border-box;
             width:330px !important;
@@ -193,14 +193,14 @@ color: #566A7F;
         .css-tr4s17-option {
             .contdetails 
             {
-            color :#19A873 ;
+            color :#5C5AD0 ;
             font-size: 13px;
             }
            
         }
        
         .css-tr4s17-option:active{
-            background-color:#E3F1EC !important;
+            background-color:#5c5ad133 !important;
            
         }
 

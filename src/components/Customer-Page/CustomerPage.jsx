@@ -184,7 +184,7 @@ const CustomerPage = () => {
         <>
 
           <Typography.Text 
-          style={record.status === "OVERDUE" ? {background: "rgba(255, 62, 29, .15)", color:"#ff3e1d", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : record.status === "ASSIGNED" ? {background: "rgba(25, 168, 115, .15)", color:"#19a873", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : {background: "rgba(255, 171, 0, .15)", color:"#ffab00", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"}}
+          style={record.status === "OVERDUE" ? {background: "rgba(255, 62, 29, .15)", color:"#ff3e1d", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : record.status === "ASSIGNED" ? {background: "rgba(92, 90, 209, .15)", color:"#5C5AD0", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"} : {background: "rgba(255, 171, 0, .15)", color:"#ffab00", padding:"0px 8px 2px 2px", borderRadius:"4px", fontSize:"13px"}}
           >
             {record.status}          
           </Typography.Text>

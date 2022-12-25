@@ -39,8 +39,8 @@ function App() {
 
           <Routes>
           {/* <Route path='/' element={<Dashboard/>} /> */}
-            <Route path='customers' element={<Customers />} />
-          {/* <Route path='customers' element={<CustomerPage/>} /> */}
+            {/* <Route path='customers' element={<Customers />} /> */}
+          <Route path='customers' element={<CustomerPage/>} />
           <Route path='leads' element={<LeadsData/>} />
           <Route path='leads/add_leads' element={<Leads/>} />
           <Route path='contacts' element={<ContactsData/>} />
