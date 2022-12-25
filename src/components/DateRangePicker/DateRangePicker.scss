@@ -1,5 +1,5 @@
 .rdrStartEdge {
-  background-color: #19a873 !important;
+  background-color: #5C5AD0 !important;
 }
 
 .rdrStartEdge + .rdrDayNumber {
@@ -11,11 +11,11 @@
   color: white !important;
 }
 .rdrInRange {
-  background-color: #e3f1ec !important;
+  background-color: #5c5ad133 !important;
 }
 
 .rdrEndEdge {
-  background-color: #19a873 !important;
+  background-color: #5C5AD0 !important;
 }
 .rdrInRange + .rdrDayNumber {
   span {
@@ -83,13 +83,12 @@
 }
 
 .rdrWeekDay {
-  color: #19a873;
+  color: #5C5AD0;
 }
 .rdrNextPrevButton {
   background-color: #ffff;
   i {
-    filter: invert(51%) sepia(100%) saturate(358%) hue-rotate(106deg)
-      brightness(85%) contrast(90%);
+    filter: invert(35%) sepia(87%) saturate(1041%) hue-rotate(218deg) brightness(84%) contrast(92%);
   }
 }
 
@@ -102,7 +101,8 @@
   width: 18px;
   height: 2px;
   border-radius: 2px;
-  background: #31a564;
+  // background: #31a564;
+
 }
 
 .rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span,
@@ -127,19 +127,19 @@
 }
 
 .rdrStaticRangeSelected {
-  color: #19a873 !important;
+  color: #5C5AD0 !important;
 }
 .rdrStaticRange:hover .rdrStaticRangeLabel,
 .rdrStaticRange:focus .rdrStaticRangeLabel {
-  background: rgba(220, 237, 228, 1) !important;
-  // background-color: rgba(220, 237, 228, 1) !important;
+  background: #5c5ad166 !important;
+  // background-color: #5c5ad166 !important;
 }
 
 .rdrNextPrevButton:hover {
-  background: rgba(220, 237, 228, 1) !important;
+  background: #5c5ad166 !important;
 }
 .rdrMonthAndYearPickers select:hover {
-  background-color: rgba(220, 237, 228, 1) !important;
+  background-color: #5c5ad166 !important;
 }
 
 .rdrDayStartPreview,
@@ -152,7 +152,7 @@
   right: 0px;
   bottom: 3px;
   pointer-events: none;
-  border: 0px solid #19a873;
+  border: 0px solid #5C5AD0;
   z-index: 1;
 }
 

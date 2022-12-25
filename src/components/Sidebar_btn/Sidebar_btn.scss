@@ -127,10 +127,10 @@ a{
             .btn{
                 background-color: rgba(0, 0, 0 ,0);
                 .plain{
-                    background-color: rgba(25, 168, 115, .1599);
-                    color: #19a873;
+                    background-color: rgba(92, 90, 209, .1599);
+                    color: #5C5AD0;
                     .btn_icon{
-                        filter: invert(47%) sepia(23%) saturate(6577%) hue-rotate(131deg) brightness(98%) contrast(70%);
+                        filter: invert(35%) sepia(87%) saturate(1041%) hue-rotate(218deg) brightness(84%) contrast(92%);
                         
                     }
                 }
@@ -141,18 +141,18 @@ a{
 .sidebar{
     .active{
         .normal{
-            background-color: rgba(25, 168, 115, .1599);
+            background-color: rgba(92, 90, 209, .1599);
             .plain{
-                // background-color: rgba(25, 168, 115, .1599);
-                color: #19a873;
+                // background-color: rgba(92, 90, 209, .1599);
+                color: #5C5AD0;
                 font-weight: 600;
                 .btn_icon{
-                    filter: invert(47%) sepia(23%) saturate(6577%) hue-rotate(131deg) brightness(98%) contrast(70%);
+                    filter: invert(35%) sepia(87%) saturate(1041%) hue-rotate(218deg) brightness(84%) contrast(92%);
                     
                 }
             }
             .right_border{
-                background-color: #19a873;
+                background-color: #5C5AD0;
             }
         }
     }
@@ -163,26 +163,26 @@ a{
     .dropdownActive{
         background-color: rgba(0, 0, 0 ,0);
         .btn_container{
-            background-color: rgba(25, 168, 115, .1599);
+            background-color: rgba(92, 90, 209, .1599);
         }
     }
 }
 .dropdownActive{
-    background-color: rgba(25, 168, 115, .1599);
+    background-color: rgba(92, 90, 209, .1599);
     .btn_container{
-        // background-color: rgba(25, 168, 115, .1599);
-            color: #19a873;
+        // background-color: rgba(92, 90, 209, .1599);
+            color: #5C5AD0;
             font-weight: 600;
             .btn_icon{
-                filter: invert(47%) sepia(23%) saturate(6577%) hue-rotate(131deg) brightness(98%) contrast(70%);
+                filter: invert(35%) sepia(87%) saturate(1041%) hue-rotate(218deg) brightness(84%) contrast(92%);
                 
             }
             .dropdown_arrow{
-                filter: invert(47%) sepia(23%) saturate(6577%) hue-rotate(131deg) brightness(98%) contrast(70%);
+                filter: invert(35%) sepia(87%) saturate(1041%) hue-rotate(218deg) brightness(84%) contrast(92%);
             }
     }
     .right_border{
-        background-color: #19a873;
+        background-color: #5C5AD0;
     }
 }
 
@@ -202,12 +202,12 @@ a{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: rgba(25, 168, 115, .1599);
+            background-color: rgba(92, 90, 209, .1599);
             width: 12px;
             height: 12px;
             
             .bullet{
-                background-color: #19a873;
+                background-color: #5C5AD0;
             }
                 }
         }
@@ -264,11 +264,11 @@ a{
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            background-color: rgba(25, 168, 115, .1599);
+            background-color: rgba(92, 90, 209, .1599);
             width: 12px;
             height: 12px;
             .bullet{
-                background-color: #27ca8e;
+                background-color: #ffffff;
             }
                 }
         }
