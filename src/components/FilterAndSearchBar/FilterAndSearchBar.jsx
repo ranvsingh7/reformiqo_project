@@ -8,6 +8,7 @@ import { CSVLink } from "react-csv";
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import filter from "./Icons/Filter.svg"
 
 
 import "./FilterAndSearchBar.scss"
@@ -453,21 +454,35 @@ const FilterAndSearchBar = (props) => {
   return (
     <>
          <div className="table_nav">
-        <div className="search_customer">
+        {/* <div className="search_customer">
           <div className="search_icon">
             <CgSearch size={23} color="#697A8D" />
           </div>
-          <input type="text" placeholder="Search Customer" />
+          <input type="text" placeholder="Search Customer" /> */}
 
           {/* <div className="searchbar_typehead">
           <Select styles={customStyle}/>
           </div> */}
 
+{/* 
+        </div> */}
 
-        </div>
+{/* <div className="tableBtn">
+            <div className="btn_icon">
+              <img src={filter} size={15} />
+            </div>
+            Filter
+          </div> */}
 
         <div className="tableBtn_container" ref={menuRef}>
-          <div className="tableBtn export" onClick={openExport}>
+        <div style={{display:"flex"}}>
+        <div className="tableBtn">
+            <div className="btn_icon">
+              <img src={filter} size={15} />
+            </div>
+            Filter
+          </div>
+          <div className="tableBtn export" onClick={openExport} style={{width :"101.5px"}}>
             <div className="btn_icon">
               <BiExport size={15} />
             </div>
@@ -514,20 +529,34 @@ const FilterAndSearchBar = (props) => {
             </div>
           </div>
 
-          <div className="tableBtn">
+          {/* <div className="tableBtn">
             <div className="btn_icon">
-              <BiFilter size={15} />
+              <img src={filter} size={15} />
             </div>
             Filter
-          </div>
+          </div> */}
 
-          <div className="tableBtn addNewBtn" onClick={showCanvas}  >
+          <div className="tableBtn addNewBtn" onClick={showCanvas} >
             <GoPlus />
             <div className="addNewBtn_text">New {props.addBtnName}</div>
             </div>
+</div>
 
-          
-          
+<div style={{display:"flex", gap:"20px"}}>
+            <div className="search_customer">
+              
+          <div className="search_icon">
+            <CgSearch size={23} color="#697A8D" />
+          </div>
+          <input type="text" placeholder="Search Customer" />
+
+          {/* <div className="searchbar_typehead">
+          <Select styles={customStyle}/>
+          </div> */}
+
+
+        </div>
+         
           <div className="settings" ref={menuRef}>
             <img
               src="/images/icons/setting.svg"
@@ -580,6 +609,7 @@ const FilterAndSearchBar = (props) => {
                 </Droppable>
               </div>
             </DragDropContext>
+          </div>
           </div>
         </div>
       </div>
