@@ -6,7 +6,13 @@ import "./AccountForm.scss";
 import DropdownSimple from '../../Contacts/DropdownSimple/DropdownSimple';
 
 function AccountForm() {
+  function handleclose () {
+    var m = document.querySelector('.menu1 ');
+    m.classList.remove('smenu');
+    document.getElementById('gradient').classList.remove('body_gradient');
+    }
   return (
+   
     <>
     <div className='accountform_heading'>
     {/* <Page_heading  parent={"Business Account / Leads"} child={"Add New Lead"}/> */}
@@ -48,7 +54,7 @@ function AccountForm() {
                 <button type="button" className="accountformsavebutton">
                   Submit
                 </button>
-                <button type="button" className="accountformcancelbutton">
+                <button type="button" className="accountformcancelbutton" onClick={handleclose}>
                 Cancel
                 </button>
               </div>

@@ -1,12 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-
-	//font-family: sans-serif;
-
-	// color:#F3F6F9;
-	//opacity: 0.5;
-	//box-sizing: border-box;
+	
 }
 .ticon
 {
@@ -19,12 +14,13 @@
 .body_gradient
 {
 position: absolute;
-height: 100vh;
+height: 110vh;
 width: 100%;
 background-color: rgba(243,246,249,0.8);
 top: 0;
 left: 0;
 z-index: 10;
+
 }
 
 .menu1_container

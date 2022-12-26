@@ -6,6 +6,8 @@ import "./VendorsData.scss"
 
 
 import { Table } from "antd";
+import Vendors from "../Vendors";
+import OffCanvasExample from "../../OffCanvas/OffCanvasExample";
 
 const VendorsData = () => {
 
@@ -237,7 +239,7 @@ const VendorsData = () => {
 
         <div className="Vendors-table-container">
         <FilterAndSearchBar columns={columnsData} addBtnName={"Vendors"} path={"add_Vendors"} />
-
+        {/* <OffCanvasExample  form={<Vendors/>}/> */}
         <Table
             ref={componentRef}
             rowSelection={{

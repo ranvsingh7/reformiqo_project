@@ -18,6 +18,7 @@ import { CgSearch } from "react-icons/cg";
 import { BiExport } from "react-icons/bi";
 import { BiFilter } from "react-icons/bi";
 import { GoPlus } from "react-icons/go";
+import { overFlow } from '@syncfusion/ej2/diagrams';
 
 
 
@@ -330,14 +331,17 @@ const FilterAndSearchBar = (props) => {
         console.log(e.destination.index);
       };
     
+
+
       const componentRef = useRef();
 
         function showCanvas ()
         {
           var m = document.querySelector('.menu1');
 	      	m.classList.add('smenu');
-          //document.root.style.backgroundColor='rgba(0,0,0,0.4)';
           document.getElementById('gradient').classList.add('body_gradient');
+          var scroll = document.querySelector('body');
+          scroll.style.overflow="hidden";
         }
 
         
