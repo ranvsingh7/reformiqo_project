@@ -339,115 +339,92 @@ const FilterAndSearchBar = (props) => {
           document.getElementById('gradient').classList.add('body_gradient');
         }
 
-        // const customStyle = {
-        //   control: (base, state) => ({
-        //     ...base,
-        //     background: "white",
-        //     width: "300px",
-        //     border: "1px solid #E5E5E5",
-        //     borderRadius: "5px",
-        //     boxShadow: "none",
-        //     // padding: "0px 0px",
-        //     height: "20px",
-        //     "&:hover": {
-        //       border: "1px solid #E5E5E5",
-        //     },
-        //   }),
-        //   option: (provided, state) => ({
-        //     ...provided,
-        //     color: state.isSelected ? "white" : "black",
-        //     backgroundColor: state.isSelected ? "#697A8D" : "white",
-        //     "&:hover": {
-        //       backgroundColor: "#697A8D",
-        //       color: "white",
-        //     },
-        //   }),
-        //   menu: (provided, state) => ({
-        //     ...provided,
-        //     backgroundColor: "red",
-        //     borderRadius: "5px",
-        //     border: "1px solid #E5E5E5",
-        //     boxShadow: "none",
-        //     zIndex: "5",
-        //     width: "400px",
-        //   }),
-        //   menuList: (provided, state) => ({
-        //     ...provided,
-        //     padding: "0px",
-        //   }),
-        //   singleValue: (provided, state) => ({
-        //     ...provided,
-        //     color: "#697A8D",
-        //     fontSize: "14px",
-        //     fontWeight: "400",
-        //     lineHeight: "20px",
-        //     letterSpacing: "0.25px",
-        //   }),
-        //   input: (provided, state) => ({
-        //     ...provided,
-        //     color: "#697A8D",
-        //     fontSize: "14px",
-        //     fontWeight: "400",
-        //     lineHeight: "20px",
-        //     letterSpacing: "0.25px",
-        //     // height: "20px",
-        //     margin: "0px",
-        //   }),
-        //   placeholder: (provided, state) => ({
-        //     ...provided,
-        //     color: "#697A8D",
-        //     fontSize: "14px",
-        //     fontWeight: "400",
-        //     lineHeight: "20px",
-        //     letterSpacing: "0.25px",
-        //   }),
-        //   indicatorSeparator: (provided, state) => ({
-        //     ...provided,
-        //     display: "none",
-        //   }),
-        //   dropdownIndicator: (provided, state) => ({
-        //     ...provided,
-        //     color: "#697A8D",
-        //     fontSize: "14px",
-        //     fontWeight: "400",
-        //     lineHeight: "20px",
-        //     letterSpacing: "0.25px",
-        //   }),
-        //   valueContainer: (provided, state) => ({
-        //     ...provided,
-        //     // padding: "0px 10px",
-        //     height: "20px",
-        //   }),
-
-        // }
+        
         const customStyle = {
-          control: (provided, state) => ({
-            ...provided,
-            background: '#fff',
-            borderColor: '#9e9e9e',
-            minHeight: '30px',
-            height: '30px',
-            boxShadow: state.isFocused ? null : null,
+          control: (base, state) => ({
+            ...base,
+            background: "white",
+            width: "300px",
+            border: "none",
+            borderRadius: "5px",
+            boxShadow: "none",
+            height: "40px",
+            marginLeft: "-8px",
+
+            "&:hover": {
+              border: "none",
+            },
           }),
-      
-          valueContainer: (provided, state) => ({
+          option: (provided, state) => ({
             ...provided,
-            height: '30px',
-            padding: '0 6px'
+            color: state.isSelected ? "white" : "black",
+            backgroundColor: state.isSelected ? "#697A8D" : "white",
+            "&:hover": {
+              backgroundColor: "#697A8D",
+              color: "white",
+            },
           }),
-      
+          menu: (provided, state) => ({
+            ...provided,
+            borderRadius: "5px",
+            border: "none",
+            boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.25)",
+            zIndex: "5",
+            width: "300px",
+          }),
+          menuList: (provided, state) => ({
+            ...provided,
+            padding: "0px",
+          }),
+          singleValue: (provided, state) => ({
+            ...provided,
+            color: "#697A8D",
+            fontSize: "14px",
+            fontWeight: "400",
+            lineHeight: "20px",
+            letterSpacing: "0.25px",
+          }),
           input: (provided, state) => ({
             ...provided,
-            margin: '0px',
+            color: "#697A8D",
+            fontSize: "14px",
+            fontWeight: "400",
+            lineHeight: "20px",
+            letterSpacing: "0.25px",
+            height: "40px",
+            // maxHeight: "30px",
+            margin: "0px",
           }),
-          indicatorSeparator: state => ({
-            display: 'none',
-          }),
-          indicatorsContainer: (provided, state) => ({
+          placeholder: (provided, state) => ({
             ...provided,
-            height: '30px',
+            color: "#697A8D",
+            fontSize: "14px",
+            fontWeight: "400",
+            lineHeight: "20px !important",
+            letterSpacing: "0.25px",
+            // marginTop: "-5px",
           }),
-        };
+          indicatorSeparator: (provided, state) => ({
+            ...provided,
+            display: "none",
+          }),
+          dropdownIndicator: (provided, state) => ({
+            ...provided,
+            color: "#697A8D",
+            fontSize: "14px",
+            fontWeight: "400",
+            lineHeight: "20px",
+            letterSpacing: "0.25px",
+          }),
+          // valueContainer: (provided, state) => ({
+          //   ...provided,
+          //   height: "40px",
+          //   // minHeight: "30px",
+          //   lineHeight: "20px !important",
+          // }),
+
+        }
+
 
 
   return (
@@ -457,11 +434,11 @@ const FilterAndSearchBar = (props) => {
           <div className="search_icon">
             <CgSearch size={23} color="#697A8D" />
           </div>
-          <input type="text" placeholder="Search Customer" />
+          {/* <input type="text" placeholder="Search Customer" /> */}
 
-          {/* <div className="searchbar_typehead">
-          <Select styles={customStyle}/>
-          </div> */}
+          <div className="searchbar_typehead">
+          <Select styles={customStyle} placeholder="Search Customer" noOptionsMessage={({inputValue}) => !inputValue ? "Search Customer" : "No Customer Found"} />
+          </div>
 
 
         </div>
