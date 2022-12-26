@@ -439,9 +439,9 @@ const FilterAndSearchBar = (props) => {
           {/* <input type="text" placeholder="Search Customer" /> */}
 
 
-          <div className="searchbar_typehead">
+          {/* <div className="searchbar_typehead">
           <Select styles={customStyle} placeholder="Search Customer" noOptionsMessage={({inputValue}) => !inputValue ? "Search Customer" : "No Customer Found"} />
-          </div>
+          </div> */}
 
 {/* 
         </div> */}
@@ -527,7 +527,10 @@ const FilterAndSearchBar = (props) => {
           <div className="search_icon">
             <CgSearch size={23} color="#697A8D" />
           </div>
-          <input type="text" placeholder="Search Customer" />
+          {/* <input type="text" placeholder="Search Customer" /> */}
+          <div className="searchbar_typehead">
+          <Select styles={customStyle} placeholder="Search Customer" noOptionsMessage={({inputValue}) => !inputValue ? "Search Customer" : "No Customer Found"} />
+          </div>
 
           {/* <div className="searchbar_typehead">
           <Select styles={customStyle}/>
