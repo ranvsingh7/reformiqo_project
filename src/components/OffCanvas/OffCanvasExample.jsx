@@ -13,6 +13,8 @@ function OffCanvasExample({form}) {
 		  var m = document.querySelector('.menu1 ');
 		  m.classList.remove('smenu');
 		  document.getElementById('gradient').classList.remove('body_gradient');
+		  var scroll = document.querySelector('body');
+		  scroll.style.overflow="auto";
 	  }
   
 	return (

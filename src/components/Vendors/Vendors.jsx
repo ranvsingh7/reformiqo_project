@@ -6,6 +6,11 @@ import DropdownSimple from './DropdownSimple/DropdownSimple';
 // import Select from "react-select";
 
 function Vendors() {
+  function handleclose () {
+    var m = document.querySelector('.menu1 ');
+    m.classList.remove('smenu');
+    document.getElementById('gradient').classList.remove('body_gradient');
+    }
 
     // const option = [
     //     {
@@ -70,7 +75,7 @@ function Vendors() {
                 <button type="button" className="leadsavebutton">
                   Save
                 </button>
-                <button type="button" className="leadcancelbutton">
+                <button type="button" className="leadcancelbutton" onClick={handleclose}>
                 Cancel
                 </button>
               </div>

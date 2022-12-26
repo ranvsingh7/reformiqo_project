@@ -12,6 +12,8 @@ import { addDays } from 'date-fns';
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
 import FilterAndSearchBar from "../FilterAndSearchBar/FilterAndSearchBar";
+import OffCanvasExample from "../OffCanvas/OffCanvasExample";
+import AddNewCustomer from "./AddNewCustomer";
 
 const Customer = (props) => {
   const [exportOpen, setExportOpen] = useState(false);
@@ -295,7 +297,7 @@ const Customer = (props) => {
 
       <div className="customer-table-container">
       <FilterAndSearchBar  columns={columnsData} addBtnName={"Customer"}/>
-
+      {/* <OffCanvasExample form={<AddNewCustomer/>}/> */}
       <div className="tableData">
         {/* <Resizable> */}
         <Table

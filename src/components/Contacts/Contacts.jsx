@@ -6,6 +6,11 @@ import DropdownSimple from './DropdownSimple/DropdownSimple';
 // import Select from "react-select";
 
 function Contacts() {
+  function handleclose () {
+    var m = document.querySelector('.menu1 ');
+    m.classList.remove('smenu');
+    document.getElementById('gradient').classList.remove('body_gradient');
+    }
   return (
   <>
    <div className='contact_heading'>
@@ -51,7 +56,7 @@ function Contacts() {
                 <button type="button" className="contactsavebutton">
                   Save
                 </button>
-                <button type="button" className="contactcancelbutton">
+                <button type="button" className="contactcancelbutton" onClick={handleclose}>
                 Cancel
                 </button>
               </div>

@@ -8,6 +8,11 @@ function Leads() {
 
 const [checked, setChecked] = useState("Contacts")
 
+function handleclose () {
+var m = document.querySelector('.menu1 ');
+m.classList.remove('smenu');
+document.getElementById('gradient').classList.remove('body_gradient');
+}
   return (
    <>
     <div className='lead_heading'>
@@ -64,7 +69,7 @@ const [checked, setChecked] = useState("Contacts")
                 <button type="button" className="leadsavebutton">
                   Save
                 </button>
-                <button type="button" className="leadcancelbutton">
+                <button type="button" className="leadcancelbutton" onClick={handleclose}>
                 Cancel
                 </button>
               </div>
